@@ -1,0 +1,7 @@
+
+.header-style{
+    height: 80vh;
+    /* background-color:lavender; */
+    background-image:url('./img/header.jpeg') ;
+    background-size: cover;
+}
