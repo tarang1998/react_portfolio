@@ -1,18 +1,13 @@
 import './App.css';
-import Navigation from './navigation/Navigation';
-import Header from './header/Header';
-import Services from './services/Services'; 
+import ReactPortfolio0 from './react_portfolio_0/ReactPortfolio_0';
+
 
 
 function App() {
   return (
     <div className="App">
 
-      <Navigation logoTitle = 'Tarang Nair'/>
-
-      <Header/>
-
-      <Services />
+      <ReactPortfolio0/>
 
     </div>
   );
