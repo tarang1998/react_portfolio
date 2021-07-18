@@ -3,7 +3,7 @@ import Header from './header/Header';
 import Services from './services/Services'; 
 
 
-function ReactPortfolio0() {
+function ReactPortfolio() {
   return (
 
     <div>
@@ -18,4 +18,4 @@ function ReactPortfolio0() {
   );
 }
 
-export default ReactPortfolio0;
+export default ReactPortfolio;

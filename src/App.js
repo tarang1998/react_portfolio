@@ -1,5 +1,5 @@
 import './App.css';
-import ReactPortfolio0 from './react_portfolio_0/ReactPortfolio_0';
+import ReactPortfolio from './react_portfolio_0/ReactPortfolio';
 
 
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
 
-      <ReactPortfolio0/>
+      <ReactPortfolio/>
 
     </div>
   );
