@@ -6,7 +6,7 @@ import Portfolio from './pages/portfolio/Portfolio'
 import Resume from './pages/resume/Resume'
 
 import {BrowserRouter as Router, Switch , Route} from 'react-router-dom'
-
+   
 function ReactPortfolio() {
   return (
 
@@ -14,10 +14,10 @@ function ReactPortfolio() {
 
         <Container>
             <Grid container>
-                <Grid item xs={12} sm={12} md={4} lg={3} style={{backgroundColor : 'blue'}}>
+                <Grid item xs={12} sm={12} md={4} lg={3}>
                     <Profile/>
                 </Grid>
-                <Grid item xs style={{backgroundColor : 'red'}}>
+                <Grid item xs>
                     <Header/>
                     <Router>
                         <Switch>
