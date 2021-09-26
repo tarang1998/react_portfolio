@@ -1,0 +1,25 @@
+.timeline {
+    padding: 0 !important;
+
+}
+
+/* Header */
+
+
+/* Header Title */
+
+.timeline .timeline-header{
+    padding-top: 7px;
+}
+
+.timeline .timeline-dot-header{
+    min-height: 8px;
+}
+
+.timeline .MuiTimelineItem-root {
+    min-height: 0px;
+}
+
+.timeline .MuiTimelineItem-missingOppositeContent:before{
+    display: none;
+}
