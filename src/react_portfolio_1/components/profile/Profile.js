@@ -4,15 +4,19 @@ import CustomTimeline from '../timeline/Timeline'
 
 import './Profile.css';
 
+import resumeData  from '../../utils/resumeData';
+
+
 const Profile = () => {
     return (
         <div className = 'profile container_shadow'>
+            
             <div className = 'profile_name'>
                 <Typography className ='name'>
-                    Tarang Nair
+                    {resumeData.name}
                 </Typography>
                 <Typography className ='title'>
-                    Software Engineer
+                    {resumeData.title}
                 </Typography>
             </div>
 
