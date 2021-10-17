@@ -1,5 +1,25 @@
 :root {
   --main-color: #ffc500;
+
+  --main-title-color: black;
+
+  --main-text-color: grey;
+
+  --main-link-color: lightsalmon;
+}
+
+.top-60 {
+  margin-top: 60px;
+}
+
+.test {
+  background-color: red;
+}
+
+@media (max-width: 991px) {
+  .top-60 {
+    margin-top: 80px;
+  }
 }
 
 .container_shadow {
