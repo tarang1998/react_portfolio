@@ -44,6 +44,14 @@
   margin-bottom: 12px;
 }
 
+.profile .button-container {
+  width: 100%;
+  justify-content: center;
+  display: flex !important;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 .timeline-item-text {
   font-size: 13.5px !important;
   color: var(--main-text-color);
