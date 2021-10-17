@@ -15,24 +15,24 @@ export default{
     address:'3/B, 804, Dreams, Bhandup(W), Mumbai-400078',
 
     socials : {
-        facebook : {
-            link : '',
-            text : 'Facebook',
+        Facebook : {
+            link : 'https://www.facebook.com/tarangnair',
+            text : 'tarangnair',
             icon : <FacebookIcon/>
         },
-        twitter : {
-            link : '',
-            text : 'Twitter',
+        Twitter : {
+            link : 'https://twitter.com/tarang90564113',
+            text : 'tarang',
             icon : <TwitterIcon/>
         },
-        linkedin : {
-            link : '',
-            text : 'Linkedin',
+        Linkedin : {
+            link : 'https://www.linkedin.com/in/tarang-nair-752aa8179/',
+            text : 'tarang',
             icon : <LinkedinIcon/>
         },
-        github : {
-            link : '',
-            text : 'Github',
+        Github : {
+            link : 'https://github.com/tarang1998',
+            text : 'tarang1998',
             icon : <GithubIcon/>
         }
     }
