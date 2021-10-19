@@ -2,9 +2,11 @@ import React from 'react'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import './Header.css'
+
 import { Nav, Navbar  } from 'react-bootstrap';
 
-import {NavLink, Link, withRouter} from 'react-router-dom';
+import {NavLink, Link, withRouter,useLocation} from 'react-router-dom';
 
 import {HomeRounded, Telegram} from '@material-ui/icons'
 
@@ -13,18 +15,19 @@ import resumeData from '../../utils/resumeData';
 
 import CustomButton from '../button/button'
 
-const Header = (props) => {
+const Header = () => {
 
-    const pathName = props?.location?.pathName;
+    const location = useLocation();
+    const pathName = location.pathname;
 
 
     return (
 
-        <Navbar sticky='top' className='header' expand='lg'>
+        <Navbar sticky='top' className='header container_shadow' expand='lg'>
 
             {/* Home */}
 
-            <Nav.Link as={NavLink} to='/'>
+            <Nav.Link as={NavLink} to='/' >
 
                 <Navbar.Brand className='header_home'>
                     <HomeRounded/>
@@ -35,15 +38,15 @@ const Header = (props) => {
             <Navbar.Toggle/>
 
             <Navbar.Collapse>
-                <Nav>
+                <Nav className='header-left' >
 
                     {/* Resume Link */}
-                    <Nav.Link as={NavLink} to='/' className={pathName==='/'?'header_link_active': 'header_link'}> 
+                    <Nav.Link as={NavLink} to="/" className={pathName == "/"?'header_link_active': 'header_link'}> 
                         Resume
                     </Nav.Link>
 
                     {/* Portfolio Link */}
-                    <Nav.Link as={NavLink} to='/' className={pathName==='/portfolio'?'header_link_active': 'header_link'}> 
+                    <Nav.Link as={NavLink} to="/portfolio" className={pathName == "/portfolio" ? "header_link_active" : 'header_link'}> 
                         Portfolio
                     </Nav.Link>
 
@@ -56,7 +59,6 @@ const Header = (props) => {
 
                     {Object.keys(resumeData.socials).map((key) => (
                         <a href={resumeData.socials[key].link} target='_blank' > 
-                            {/* {resumeData.socials[key].text} */}
                             {resumeData.socials[key].icon}
                         </a>
                     ))}
