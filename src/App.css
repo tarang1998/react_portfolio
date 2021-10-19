@@ -12,10 +12,6 @@
   margin-top: 60px;
 }
 
-.test {
-  background-color: red;
-}
-
 @media (max-width: 991px) {
   .top-60 {
     margin-top: 80px;

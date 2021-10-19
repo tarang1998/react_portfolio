@@ -1,8 +1,8 @@
 
-import { FacebookIcon } from "@material-ui/icons/Facebook"
-import { TwitterIcon } from "@material-ui/icons/Twitter"
-import { LinkedinIcon } from "@material-ui/icons/LinkedIn"
-import { GithubIcon } from "@material-ui/icons/GitHub"
+
+
+import {Facebook , LinkedIn , Twitter ,GitHub} from '@material-ui/icons'
+
 
 
 export default{
@@ -18,22 +18,22 @@ export default{
         Facebook : {
             link : 'https://www.facebook.com/tarangnair',
             text : 'tarangnair',
-            icon : <FacebookIcon/>
+            icon : <Facebook/>
         },
         Twitter : {
             link : 'https://twitter.com/tarang90564113',
             text : 'tarang',
-            icon : <TwitterIcon/>
+            icon : <Twitter/>
         },
         Linkedin : {
             link : 'https://www.linkedin.com/in/tarang-nair-752aa8179/',
             text : 'tarang',
-            icon : <LinkedinIcon/>
+            icon : <LinkedIn/>
         },
         Github : {
             link : 'https://github.com/tarang1998',
             text : 'tarang1998',
-            icon : <GithubIcon/>
+            icon : <GitHub/>
         }
     }
 
