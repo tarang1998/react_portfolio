@@ -7,7 +7,7 @@ import resumeData from '../../utils/resumeData';
 
 const Footer = () => {
     return (
-        <div className='footer'>
+        <div className='footer container_shadow'>
 
             <div className = 'footer_left'>
                 <Typography className='footer_name'><a href={resumeData.socials['Linkedin'].link} target='_blank'>Lets Connect!</a></Typography>
