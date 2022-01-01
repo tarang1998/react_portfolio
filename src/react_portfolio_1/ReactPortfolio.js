@@ -12,14 +12,19 @@ function ReactPortfolio() {
 
     <div>
 
-        <Container>
-            <Grid container>
+        <Container className = 'top-60'>
+
+            <Grid container spacing={7}>
+
                 <Grid item xs={12} sm={12} md={4} lg={3}>
                     <Profile/>
                 </Grid>
-                <Grid item xs>
-                    <Header/>
+
+                <Grid item xs >
                     <Router>
+
+                        <Header />
+
                         <Switch>
                             <Route path = '/portfolio'>
                                 <Portfolio/>
@@ -28,9 +33,14 @@ function ReactPortfolio() {
                                 <Resume/>
                             </Route>
                         </Switch>
+
+                        <Footer/>
+
+
                     </Router>
-                    <Footer/>
+
                 </Grid>
+                
             </Grid>
         </Container>
 
