@@ -4,7 +4,7 @@ import CustomTimeline, { CustomTimelineSeparator } from "../timeline/Timeline";
 
 import "./Profile.css";
 
-import resumeData from "../../utils/resumeData";
+import { mediaLinks, personalData } from "../../utils/portfolioData";
 import { TimelineItem } from "@material-ui/lab";
 import TimelineContent from "@material-ui/lab/TimelineContent";
 import PersonOutlineOutlinedIcon from "@material-ui/icons/PersonOutlineOutlined";
@@ -38,8 +38,8 @@ const Profile = () => {
   return (
     <div className="profile container_shadow ">
       <div className="profile_name">
-        <Typography className="name">{resumeData.name}</Typography>
-        <Typography className="title">{resumeData.title}</Typography>
+        <Typography className="name">{personalData.name}</Typography>
+        <Typography className="title">{personalData.title}</Typography>
       </div>
 
       <figure className="profile_image">
@@ -51,15 +51,15 @@ const Profile = () => {
           icon={<PersonOutlineOutlinedIcon />}
           children={
             <div>
-              <CustomTimelineItem title="Email" text={resumeData.email} />
-              <CustomTimelineItem title="Contact" text={resumeData.contact} />
-              <CustomTimelineItem title="D.O.B" text={resumeData.birthday} />
+              <CustomTimelineItem title="Email" text={personalData.email} />
+              <CustomTimelineItem title="Contact" text={personalData.contact} />
+              <CustomTimelineItem title="D.O.B" text={personalData.birthday} />
 
-              {Object.keys(resumeData.socials).map((key) => (
+              {Object.keys(mediaLinks.socials).map((key) => (
                 <CustomTimelineItem
                   title={key}
-                  text={resumeData.socials[key].text}
-                  link={resumeData.socials[key].link}
+                  text={mediaLinks.socials[key].text}
+                  link={mediaLinks.socials[key].link}
                 />
               ))}
             </div>

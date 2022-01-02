@@ -10,7 +10,7 @@ import { NavLink, Link, withRouter, useLocation } from "react-router-dom";
 
 import { HomeRounded, Telegram } from "@material-ui/icons";
 
-import resumeData from "../../utils/resumeData";
+import { mediaLinks } from "../../utils/portfolioData";
 
 import CustomButton from "../button/button";
 
@@ -54,9 +54,9 @@ const Header = () => {
         </Nav>
 
         <div className="header-right">
-          {Object.keys(resumeData.socials).map((key) => (
-            <a href={resumeData.socials[key].link} target="_blank">
-              {resumeData.socials[key].icon}
+          {Object.keys(mediaLinks.socials).map((key) => (
+            <a href={mediaLinks.socials[key].link} target="_blank">
+              {mediaLinks.socials[key].icon}
             </a>
           ))}
 
