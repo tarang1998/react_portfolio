@@ -1,84 +1,70 @@
-import React from 'react'
+import React from "react";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
-import './Header.css'
+import "./Header.css";
 
-import { Nav, Navbar  } from 'react-bootstrap';
+import { Nav, Navbar } from "react-bootstrap";
 
-import {NavLink, Link, withRouter,useLocation} from 'react-router-dom';
+import { NavLink, Link, withRouter, useLocation } from "react-router-dom";
 
-import {HomeRounded, Telegram} from '@material-ui/icons'
+import { HomeRounded, Telegram } from "@material-ui/icons";
 
+import resumeData from "../../utils/resumeData";
 
-import resumeData from '../../utils/resumeData';
-
-import CustomButton from '../button/button'
+import CustomButton from "../button/button";
 
 const Header = () => {
+  const location = useLocation();
+  const pathName = location.pathname;
 
-    const location = useLocation();
-    const pathName = location.pathname;
+  return (
+    <Navbar sticky="top" className="header container_shadow" expand="lg">
+      {/* Home */}
 
+      <Nav.Link as={NavLink} to="/">
+        <Navbar.Brand className="header_home">
+          <HomeRounded />
+        </Navbar.Brand>
+      </Nav.Link>
 
-    return (
+      <Navbar.Toggle />
 
-        <Navbar sticky='top' className='header container_shadow' expand='lg'>
+      <Navbar.Collapse>
+        <Nav className="header-left">
+          {/* Resume Link */}
+          <Nav.Link
+            as={NavLink}
+            to="/"
+            className={pathName == "/" ? "header_link_active" : "header_link"}
+          >
+            Resume
+          </Nav.Link>
 
-            {/* Home */}
+          {/* Portfolio Link */}
+          <Nav.Link
+            as={NavLink}
+            to="/portfolio"
+            className={
+              pathName == "/portfolio" ? "header_link_active" : "header_link"
+            }
+          >
+            Portfolio
+          </Nav.Link>
+        </Nav>
 
-            <Nav.Link as={NavLink} to='/' >
+        <div className="header-right">
+          {Object.keys(resumeData.socials).map((key) => (
+            <a href={resumeData.socials[key].link} target="_blank">
+              {resumeData.socials[key].icon}
+            </a>
+          ))}
 
-                <Navbar.Brand className='header_home'>
-                    <HomeRounded/>
-                </Navbar.Brand>
+          <CustomButton text={"Hire Me"} icon={<Telegram />} />
+        </div>
+      </Navbar.Collapse>
+    </Navbar>
+  );
+};
 
-            </Nav.Link>
-
-            <Navbar.Toggle/>
-
-            <Navbar.Collapse>
-                <Nav className='header-left' >
-
-                    {/* Resume Link */}
-                    <Nav.Link as={NavLink} to="/" className={pathName == "/"?'header_link_active': 'header_link'}> 
-                        Resume
-                    </Nav.Link>
-
-                    {/* Portfolio Link */}
-                    <Nav.Link as={NavLink} to="/portfolio" className={pathName == "/portfolio" ? "header_link_active" : 'header_link'}> 
-                        Portfolio
-                    </Nav.Link>
-
-
-
-
-                </Nav>
-
-                <div className='header-right'> 
-
-                    {Object.keys(resumeData.socials).map((key) => (
-                        <a href={resumeData.socials[key].link} target='_blank' > 
-                            {resumeData.socials[key].icon}
-                        </a>
-                    ))}
-
-                    <CustomButton text={'Hire Me'}  icon={<Telegram/>}/>
-
-                   
-
-                </div>
-
-
-
-
-            </Navbar.Collapse>
-
-
-
-
-        </Navbar>
-    )
-}
-
-export default withRouter(Header)
+export default withRouter(Header);
