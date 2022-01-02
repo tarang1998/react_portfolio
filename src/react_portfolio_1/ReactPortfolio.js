@@ -6,7 +6,7 @@ import Portfolio from "./pages/portfolio/Portfolio";
 import Resume from "./pages/resume/Resume";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import "../App.css";
+import "./reactPortfolio.css";
 
 function ReactPortfolio() {
   return (
@@ -23,7 +23,7 @@ function ReactPortfolio() {
             <Router>
               <Header />
 
-              <div className="main_content main_border_radius container_shadow ">
+              <div className="main_content main_border container_shadow ">
                 <Switch>
                   <Route path="/portfolio">
                     <Portfolio />

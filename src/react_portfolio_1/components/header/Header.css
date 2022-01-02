@@ -2,7 +2,10 @@
   margin-bottom: 30px !important;
   background-color: white !important;
   padding: 0px 22px 0px 0px !important;
-  border-radius: 6px !important;
+  border-radius: 50px !important;
+  border-color: black;
+  border-style: solid;
+  border-width: 2.5px;
 }
 
 .header .header_link {
@@ -32,8 +35,8 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
-  border-top-left-radius: 6px !important;
-  border-bottom-left-radius: 6px !important;
+  border-top-left-radius: 50px !important;
+  border-bottom-left-radius: 50px !important;
 }
 
 .header .header-left {
