@@ -1,4 +1,4 @@
-import { Container, Grid } from "@material-ui/core";
+import { Container, Grid} from "@material-ui/core";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Profile from "./components/profile/Profile";
@@ -8,33 +8,46 @@ import Resume from "./pages/resume/Resume";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./reactPortfolio.css";
 
-function ReactPortfolio() {
+
+function ReactPortfolio(props) {
+
+
+  const theme = props.theme
+  const setTheme = props.setTheme
+
   return (
-    <div>
+    <div style={{
+      'background-color': theme.body_color,
+      'overflow':'auto'
+    }}>
       <Container maxWidth="xl" className="top-20">
         <Grid container spacing={3}>
           <Grid item xs={12} sm={12} md={4} lg={3}>
             <div>
-              <Profile />
+              <Profile theme = {theme}/>
             </div>
           </Grid>
 
           <Grid item xs>
             <Router>
-              <Header />
+              <Header theme={theme} setTheme={setTheme}/>
 
-              <div className="main_content main_border container_shadow ">
+              <div className="main_content main_border container_shadow "
+                style={{
+                  'background-color': theme.body_color,
+                  'border-color' : theme.contrast_color
+                }}>
                 <Switch>
                   <Route path="/portfolio">
                     <Portfolio />
                   </Route>
                   <Route path="/">
-                    <Resume />
+                    <Resume theme={theme}/>
                   </Route>
                 </Switch>
               </div>
 
-              <Footer />
+              <Footer theme={theme}/>
             </Router>
           </Grid>
         </Grid>

@@ -1,9 +1,7 @@
 .profile {
-  background-color: white;
   border-radius: 50px;
-  border-color: black;
   border-style: solid;
-  border-width: 2.5px;
+  border-width: 1px;
   width: 100%;
   display: inline-block;
   padding-top: 10px;
@@ -23,12 +21,10 @@
   text-transform: uppercase;
   font-size: 20px;
   font-weight: bold;
-  color: var(--main-title-color);
 }
 
 .profile_name .title {
   font-size: 17px;
-  color: var(--main-text-color);
 }
 
 .profile_image {
@@ -44,13 +40,19 @@
 .profile_information {
   top: 0;
   left: 0;
-  margin-top: -50px;
+  margin-top: -40px;
   margin-left: 10px;
+  min-height: 120px;
 }
 
 .profile_information .timeline .timeline-content {
   padding-top: 2px;
   margin-bottom: 12px;
+  display: inline-flex !important;
+}
+
+.profile_information .timeline .timeline-content .MuiSvgIcon-root {
+  font-size: 22px !important;
 }
 
 .profile .button-container {
@@ -62,13 +64,11 @@
 }
 
 .timeline-item-text {
-  font-size: 13.5px !important;
-  color: var(--main-text-color);
+  font-size: 15px !important;
   font-weight: 400;
 }
 
 .timeline-item-text > span {
-  color: var(--main-title-color);
   font-weight: 550;
 }
 
