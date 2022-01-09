@@ -1,0 +1,26 @@
+.greeting-text-grid {
+}
+
+.greeting-title {
+  margin-top: 130px;
+  margin-left: 50px;
+  font-size: 75px;
+  line-height: 6px;
+  font-family: "Google Sans Bold";
+}
+
+.greeting-sub-title {
+  font-size: 30px;
+  line-height: 40px;
+  margin-left: 50px;
+  margin-top: 25px;
+  font-family: "Google Sans Medium";
+}
+
+.greeting-p {
+  margin-left: 50px;
+  font-size: 15px;
+}
+
+.greeting-image-grid {
+}

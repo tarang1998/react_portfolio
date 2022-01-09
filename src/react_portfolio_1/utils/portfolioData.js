@@ -8,6 +8,10 @@ const personalData = {
   email: "tarangnair98@gmail.com",
 };
 
+const greetingData = {
+  title : 'Hello 👋'
+}
+
 const mediaLinks = {
   socials: {
     Facebook: {
@@ -35,7 +39,7 @@ const mediaLinks = {
 
 const introduction = {
   aboutMe:
-    "A Software developer with experience in building scalable, testable production grade applications with excellent research and debugging skills and the ability to quickly learn and adapt with the ever changing technology . I love to take up hard challenges, collaborate with people, automate things and solve real world problems.",
+    "A Software developer with experience in building scalable, testable production grade applications with excellent research and debugging skills and the ability to quickly learn and adapt with the ever changing technology. I love to take up hard challenges, collaborate with people, automate things and solve real world problems.",
 };
 
-export { personalData, mediaLinks, introduction };
+export { personalData, greetingData, mediaLinks, introduction };
