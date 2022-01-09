@@ -5,6 +5,7 @@ import './home.css'
 import { useContext } from 'react'
 import { ThemeContext } from 'styled-components'
 import Greetings from "../../components/greetings/greeting";
+import Skills from "../../components/skills/skills";
 
 
 const Home = (props) => {
@@ -32,7 +33,7 @@ const Home = (props) => {
 
       <Greetings/>
 
-      <Grid conatiner className="section"></Grid>
+      <Skills/>
 
       <Grid container className="section"></Grid>
 
