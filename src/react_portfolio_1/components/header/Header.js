@@ -1,4 +1,4 @@
-import React , { useState } from "react";
+import React  from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -6,20 +6,33 @@ import "./Header.css";
 
 import { Nav, Navbar } from "react-bootstrap";
 
-import { NavLink, Link, withRouter, useLocation } from "react-router-dom";
+import { NavLink, withRouter, useLocation } from "react-router-dom";
 
-import { HomeRounded, Telegram } from "@material-ui/icons";
-
-import { mediaLinks } from "../../utils/portfolioData";
-
-import CustomButton from "../button/button";
+import { HomeRounded } from "@material-ui/icons";
 import { CgSun } from "react-icons/cg/";
 import { HiMoon } from "react-icons/hi";
+import styled from "styled-components";
 
 
 const Header = (props) => {
 
   //TODO : Glamor for CSS styling
+
+  const ThemeTogglingButton = styled.button`
+    cursor: pointer;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: none;
+    background-color: ${props.theme.name === "light" ? "#7CD1F7" : "#292C3F"};
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    :hover: {
+      boxShadow: 0 3px 8px ${
+        props.theme.name === "light" ? "#F7D774" : "#646464"
+      },
+    },
+  `
 
 
   const location = useLocation();
@@ -132,6 +145,8 @@ const Header = (props) => {
           onClick={changeTheme}>
             {icon}
           </button>
+
+          {/* <ThemeTogglingButton  onClick={changeTheme}>{icon}</ThemeTogglingButton> */}
 
         </div>
       </Navbar.Collapse>

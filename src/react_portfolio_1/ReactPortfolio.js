@@ -47,7 +47,7 @@ function ReactPortfolio(props) {
                 </Switch>
               </div>
 
-              <Footer theme={theme}/>
+              <Footer/>
             </Router>
           </Grid>
         </Grid>

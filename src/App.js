@@ -4,6 +4,7 @@ import ReactPortfolio from "./react_portfolio_1/ReactPortfolio";
 import React, { useState } from "react";
 
 import {themes} from "./react_portfolio_1/utils/themeData"
+import { ThemeProvider } from "styled-components";
 
 
 function App() {
@@ -17,10 +18,11 @@ function App() {
   
   return (
       <div >
-        {/* TODO : Research on Theme Provider */}
-        <ReactPortfolio 
-          theme={themes[selectedTheme]} 
-          setTheme={setTheme}/>
+        <ThemeProvider theme={themes[selectedTheme]}>
+          <ReactPortfolio 
+            theme={themes[selectedTheme]} 
+            setTheme={setTheme}/>
+        </ThemeProvider>
       </div>
     
    

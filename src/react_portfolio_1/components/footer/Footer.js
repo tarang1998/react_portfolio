@@ -5,19 +5,25 @@ import { Favorite } from "@material-ui/icons";
 import "./Footer.css";
 import { mediaLinks, personalData } from "../../utils/portfolioData";
 
+import { useContext } from 'react'
+import { ThemeContext } from 'styled-components'
+
 const Footer = (props) => {
+
+  const currentTheme = useContext(ThemeContext)
+
   return (
     <div className="footer container_shadow" style={{
-      'background-color': props.theme.body_color,
-      'border-color': props.theme.contrast_color
+      'background-color': currentTheme.body_color,
+      'border-color': currentTheme.contrast_color
 
     }}>
       <div className="footer_left">
         <Typography className="footer_name" style={{
-          'color': props.theme.contrast_color
+          'color': currentTheme.contrast_color
         }}>
           <a href={mediaLinks.socials["Linkedin"].link} target="_blank" style={{
-          'color': props.theme.contrast_color
+          'color': currentTheme.contrast_color
         }}>
             Lets Connect!
           </a>
@@ -26,11 +32,11 @@ const Footer = (props) => {
 
       <div className="footer_right">
         <Typography className="footer_copyright" style={{
-          'color': props.theme.contrast_color
+          'color': currentTheme.contrast_color
         }}>
           Developed with <Favorite></Favorite> by{" "}
           <a href={mediaLinks.socials["Github"].link} target="_blank" style={{
-          'color': props.theme.contrast_color
+          'color': currentTheme.contrast_color
         }}>
             {personalData.name}
           </a>
