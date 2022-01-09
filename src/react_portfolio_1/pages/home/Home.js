@@ -3,7 +3,7 @@ import React from "react";
 import { introduction } from "../../utils/portfolioData";
 import { Grid, Typography } from "@material-ui/core";
 
-const Resume = (props) => {
+const Home = (props) => {
   return (
     <>
       <Grid container className="section">
@@ -34,4 +34,4 @@ const Resume = (props) => {
   );
 };
 
-export default Resume;
+export default Home;

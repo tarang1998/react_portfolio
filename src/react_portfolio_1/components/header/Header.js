@@ -1,4 +1,4 @@
-import React  from "react";
+import React , {useState} from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -12,6 +12,9 @@ import { HomeRounded } from "@material-ui/icons";
 import { CgSun } from "react-icons/cg/";
 import { HiMoon } from "react-icons/hi";
 import styled from "styled-components";
+import Fade from 'react-reveal/Fade';
+import HeadShake from 'react-reveal/HeadShake';
+
 
 
 const Header = (props) => {
@@ -38,7 +41,12 @@ const Header = (props) => {
   const location = useLocation();
   const pathName = location.pathname;
 
+  const [count, changeCount] = useState(0)
+
   function changeTheme() {
+
+    changeCount(count+1)
+
     if (props.theme.name === "light") {
       props.setTheme("dark");
       localStorage.setItem("theme", "dark");
@@ -66,6 +74,7 @@ const Header = (props) => {
   }
 
   return (
+    <Fade duration={1000} top>
     <Navbar 
     //sticky="top" 
     className="header container_shadow" 
@@ -98,7 +107,7 @@ const Header = (props) => {
             className={pathName == "/" ? "header_link_active" : "header_link"}
             style = {headerlinkStyle}
           >
-            Resume
+            Home
           </Nav.Link>
 
           {/* Portfolio Link */}
@@ -125,32 +134,36 @@ const Header = (props) => {
 
           {/* <CustomButton text={"Hire Me"} icon={<Telegram />} /> */}
 
-          <button style={{
-            cursor: "pointer",
-            height: "45px",
-            width: "45px",
-            borderRadius: "50%",
-            border: "none",
-            // alignItems: "center",
-            // justifyContent: "center",
-            backgroundColor: props.theme.name === "light" ? "#7CD1F7" : "#292C3F",
-            outline: "none",
-            transition: "all 0.2s ease-in-out",
-            ":hover": {
-              boxShadow: `0 3px 8px ${
-                props.theme.name === "light" ? "#F7D774" : "#646464"
-              }`,
-            },
-          }} 
-          onClick={changeTheme}>
-            {icon}
-          </button>
+          <HeadShake spy={count}>
+            <button style={{
+              cursor: "pointer",
+              height: "45px",
+              width: "45px",
+              borderRadius: "50%",
+              border: "none",
+              // alignItems: "center",
+              // justifyContent: "center",
+              backgroundColor: props.theme.name === "light" ? "#7CD1F7" : "#292C3F",
+              outline: "none",
+              transition: "all 0.2s ease-in-out",
+              ":hover": {
+                boxShadow: `0 3px 8px ${
+                  props.theme.name === "light" ? "#F7D774" : "#646464"
+                }`,
+              },
+            }} 
+            onClick={changeTheme}>
+              {icon}
+            </button>
+          </HeadShake>
+          
 
           {/* <ThemeTogglingButton  onClick={changeTheme}>{icon}</ThemeTogglingButton> */}
 
         </div>
       </Navbar.Collapse>
     </Navbar>
+    </Fade>
   );
 };
 

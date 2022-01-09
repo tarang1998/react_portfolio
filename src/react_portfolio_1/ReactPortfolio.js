@@ -3,10 +3,12 @@ import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Profile from "./components/profile/Profile";
 import Portfolio from "./pages/portfolio/Portfolio";
-import Resume from "./pages/resume/Resume";
+import Home from "./pages/home/Home";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./reactPortfolio.css";
+import Fade from 'react-reveal/Fade';
+
 
 
 function ReactPortfolio(props) {
@@ -32,20 +34,22 @@ function ReactPortfolio(props) {
             <Router>
               <Header theme={theme} setTheme={setTheme}/>
 
-              <div className="main_content main_border container_shadow "
-                style={{
-                  'background-color': theme.body_color,
-                  'border-color' : theme.contrast_color
-                }}>
-                <Switch>
-                  <Route path="/portfolio">
-                    <Portfolio />
-                  </Route>
-                  <Route path="/">
-                    <Resume theme={theme}/>
-                  </Route>
-                </Switch>
-              </div>
+              <Fade duration={1000} bottom>
+                <div className="main_content main_border container_shadow "
+                  style={{
+                    'background-color': theme.body_color,
+                    'border-color' : theme.contrast_color
+                  }}>
+                  <Switch>
+                    <Route path="/portfolio">
+                      <Portfolio />
+                    </Route>
+                    <Route path="/">
+                      <Home theme={theme}/>
+                    </Route>
+                  </Switch>
+                </div>
+              </Fade>
 
               <Footer/>
             </Router>
