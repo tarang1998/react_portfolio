@@ -7,8 +7,8 @@ function FeelingProud(props) {
     <svg
       version="1.1"
       viewBox="80 -10 100.1879 500"
-      height="450"
-      width="500"
+      height="500"
+      width="600"
       data-name="Layer 1"
       id="b52d7e2d-d80f-4111-b6ed-d15502ee1edd"
     >

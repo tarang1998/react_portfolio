@@ -22,5 +22,39 @@
   font-size: 15px;
 }
 
-.greeting-image-grid {
+.greeting-image-grid > * {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1380px) {
+  .greeting-title {
+    font-size: 60px;
+    line-height: 5px;
+  }
+
+  .greeting-sub-title {
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  .greeting-p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1110px) {
+  .greeting-title {
+    font-size: 50px;
+    line-height: 5px;
+  }
+
+  .greeting-sub-title {
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  .greeting-p {
+    font-size: 13px;
+  }
 }
