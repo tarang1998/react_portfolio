@@ -1,73 +1,86 @@
-import { Typography } from '@material-ui/core'
-import React from 'react'
-import CustomTimeline , {CustomTimelineSeparator} from '../timeline/Timeline'
+import { Typography } from "@material-ui/core";
+import React from "react";
+import CustomTimeline, { CustomTimelineItem, CustomTimelineSeparator } from "../timeline/Timeline";
 
-import './Profile.css';
+import "./Profile.css";
 
-import resumeData  from '../../utils/resumeData';
-import { TimelineItem } from '@material-ui/lab';
-import TimelineContent from '@material-ui/lab/TimelineContent';
-import PersonOutlineOutlinedIcon from '@material-ui/icons/PersonOutlineOutlined'
-import GetAppIcon from '@material-ui/icons/GetApp'
-import CustomButton from '../button/button'
-
-
-const CustomTimelineItem = ({title , text , link}) => (
-    <TimelineItem>
-        <CustomTimelineSeparator/>
-        <TimelineContent className='timeline-content'>
-            {link ? 
-                (<Typography className = 'timeline-item-text'>
-                    <span>{title}</span>{' : '}<a href={link} target="_blank">{text}</a>
-                </Typography>) : 
-                (<Typography className = 'timeline-item-text'>
-                    <span>{title}</span>{' : '}{text}
-                </Typography>
-                )}
-        </TimelineContent>
-    </TimelineItem>
-);
-
-
-const Profile = () => {
-    return (
-        <div className = 'profile container_shadow'>
-
-            <div className = 'profile_name'>
-                <Typography className ='name'>
-                    {resumeData.name}
-                </Typography>
-                <Typography className ='title'>
-                    {resumeData.title}
-                </Typography>
-            </div>
-
-            <figure className ='profile_image'>
-                <img src={require('../../assets/images/tarang.jpg').default} alt='' />
-            </figure>
-
-            <div className='profile_information'>
-                <CustomTimeline icon={<PersonOutlineOutlinedIcon/>} children={
-                    <div>
-                        <CustomTimelineItem title= 'Email' text={resumeData.email}/>
-                        <CustomTimelineItem title= 'Contact' text={resumeData.contact}/>
-                        <CustomTimelineItem title= 'D.O.B' text={resumeData.birthday}/>
+import { mediaLinks, personalData } from "../../utils/portfolioData";
+import { TimelineItem } from "@material-ui/lab";
+import TimelineContent from "@material-ui/lab/TimelineContent";
+import PersonOutlineOutlinedIcon from "@material-ui/icons/PersonOutlineOutlined";
+import GetAppIcon from "@material-ui/icons/GetApp";
+import CustomButton from "../button/button";
+import { Email } from "@material-ui/icons";
+import Fade from 'react-reveal/Fade';
+import RubberBand from 'react-reveal/RubberBand';
 
 
 
-                        {Object.keys(resumeData.socials).map((key)=>(
-                            <CustomTimelineItem title={key} text={resumeData.socials[key].text} link={resumeData.socials[key].link}/>
-                        ))}
-                    </div>
-                }/>
+const Profile = (props) => {
 
-                <div className='button-container'>
-                    <CustomButton text={'Download CV'} icon={<GetAppIcon/>}/>
+  return (
+    <Fade duration={1000} left>
+      <div className="profile container_shadow "
+        style = {{
+          'background-color': props.theme.body_color,
+          'border-color': props.theme.contrast_color
+
+        }}
+        >
+        <RubberBand duration={2000}>
+           <div className="profile_name">
+            <Typography className="name" style ={{'color': props.theme.contrast_color}}>{personalData.name}</Typography>
+            <Typography className="title" style = {{'color': props.theme.contrast_color}}>{personalData.title}</Typography>
+          </div>  
+        </RubberBand>
+       
+
+        <figure className="profile_image">
+          <img src={require("../../assets/images/tarang1.jpg").default} alt="" />
+        </figure>
+
+        <RubberBand duration={2000}>
+          <div className="profile_information">
+            <CustomTimeline
+              icon={<PersonOutlineOutlinedIcon 
+                style ={{
+                  'color': props.theme.body_color
+                }}/>}
+
+              children={
+                <div>
+                  <CustomTimelineItem icon={<Email />} text={personalData.email} theme={props.theme} hideConnector = {true}/>
+                  {/* <CustomTimelineItem  text={personalData.contact} theme={props.theme} hideConnector = {true}/>
+                  <CustomTimelineItem  text={personalData.birthday} theme={props.theme} hideConnector = {true}/> */}
+
+                  {Object.keys(mediaLinks.socials).map((key) => (
+                    <CustomTimelineItem
+                      icon ={mediaLinks.socials[key].icon}
+                      text={mediaLinks.socials[key].text}
+                      link={mediaLinks.socials[key].link}
+                      theme={props.theme}
+                      hideConnector = {true}
+                    />
+                  ))}
                 </div>
+              }
+              hideConnector = {true}
+              theme = {props.theme}
+            />
 
+            {/* <div className="button-container">
+              <CustomButton text={"Download CV"} icon={<GetAppIcon />} />
             </div>
-        </div>
-    )
-}
+            */}
+            
+          </div>
+        </RubberBand>
 
-export default Profile
+
+        
+      </div>
+    </Fade>
+  );
+};
+
+export default Profile;

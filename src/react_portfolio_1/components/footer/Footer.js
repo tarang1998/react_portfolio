@@ -1,27 +1,49 @@
-import { Typography } from '@material-ui/core'
-import React from 'react'
-import {Favorite} from '@material-ui/icons'
+import { Typography } from "@material-ui/core";
+import React from "react";
+import { Favorite } from "@material-ui/icons";
 
-import './Footer.css'
-import resumeData from '../../utils/resumeData';
+import "./Footer.css";
+import { mediaLinks, personalData } from "../../utils/portfolioData";
 
-const Footer = () => {
-    return (
-        <div className='footer'>
+import { useContext } from 'react'
+import { ThemeContext } from 'styled-components'
 
-            <div className = 'footer_left'>
-                <Typography className='footer_name'><a href={resumeData.socials['Linkedin'].link} target='_blank'>Lets Connect!</a></Typography>
-            </div> 
+const Footer = (props) => {
 
-            <div className = 'footer_right'>
-                <Typography className='footer_copyright'>
-                    Developed with <Favorite></Favorite> by <a href={resumeData.socials['Github'].link} target='_blank'>{resumeData.name}</a>
-                </Typography>
-            </div> 
+  const currentTheme = useContext(ThemeContext)
 
+  return (
+    <div className="footer container_shadow" style={{
+      'background-color': currentTheme.body_color,
+      'border-color': currentTheme.contrast_color
 
-        </div>
-    )
-}
+    }}>
+      <div className="footer_left">
+        <Typography className="footer_name" style={{
+          'color': currentTheme.contrast_color
+        }}>
+          <a href={mediaLinks.socials["Linkedin"].link} target="_blank" style={{
+          'color': currentTheme.contrast_color
+        }}>
+            Lets Connect!
+          </a>
+        </Typography>
+      </div>
 
-export default Footer
+      <div className="footer_right">
+        <Typography className="footer_copyright" style={{
+          'color': currentTheme.contrast_color
+        }}>
+          Developed with <Favorite></Favorite> by{" "}
+          <a href={mediaLinks.socials["Github"].link} target="_blank" style={{
+          'color': currentTheme.contrast_color
+        }}>
+            {personalData.name}
+          </a>
+        </Typography>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;

@@ -1,28 +1,26 @@
 .footer {
-  background-color: black;
-  color: white;
   display: flex !important;
   flex-wrap: wrap !important;
   align-items: center;
   justify-content: space-between;
   min-height: 70px;
-  border-radius: 8px;
+  border-radius: 50px !important;
+  border-style: solid;
+  border-width: 1px;
   padding: 20px 25px;
 }
 
 .footer .footer_left .footer_name > a {
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: 600;
   text-decoration: none !important;
-  color: var(--main-color) !important;
 }
 
 .footer .footer_right .footer_copyright {
   font-size: small !important;
   text-align: end !important;
-  color: white !important;
 }
 
 .footer .footer_right .footer_copyright > a {
   text-decoration: none !important;
-  color: var(--main-color) !important;
 }

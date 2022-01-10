@@ -1,49 +1,61 @@
-import {Container, Grid} from '@material-ui/core'
-import Footer from './components/footer/Footer';
-import Header from './components/header/Header';
-import Profile from './components/profile/Profile';
-import Portfolio from './pages/portfolio/Portfolio'
-import Resume from './pages/resume/Resume'
+import { Container, Grid} from "@material-ui/core";
+import Footer from "./components/footer/Footer";
+import Header from "./components/header/Header";
+import Profile from "./components/profile/Profile";
+import Portfolio from "./pages/portfolio/Portfolio";
+import Home from "./pages/home/Home";
 
-import {BrowserRouter as Router, Switch , Route} from 'react-router-dom'
-   
-function ReactPortfolio() {
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./reactPortfolio.css";
+import Fade from 'react-reveal/Fade';
+
+
+
+function ReactPortfolio(props) {
+
+
+  const theme = props.theme
+  const setTheme = props.setTheme
+
   return (
+    <div style={{
+      'background-color': theme.body_color,
+      'overflow':'auto'
+    }}>
+      <Container maxWidth="xl" className="top-20">
+        <Grid container spacing={3}>
+          <Grid item xs={12} sm={12} md={4} lg={3}>
+            <div>
+              <Profile theme = {theme}/>
+            </div>
+          </Grid>
 
-    <div>
+          <Grid item xs>
+            <Router>
+              <Header theme={theme} setTheme={setTheme}/>
 
-        <Container className = 'top-60'>
+              <Fade duration={1000} bottom>
+                <div className="main_content main_border container_shadow "
+                  style={{
+                    'background-color': theme.body_color,
+                    'border-color' : theme.contrast_color
+                  }}>
+                  <Switch>
+                    <Route path="/portfolio">
+                      <Portfolio />
+                    </Route>
+                    <Route path="/">
+                      <Home theme={theme}/>
+                    </Route>
+                  </Switch>
+                </div>
+              </Fade>
 
-            <Grid container spacing={7}>
-
-                <Grid item xs={12} sm={12} md={4} lg={3}>
-                    <Profile/>
-                </Grid>
-
-                <Grid item xs >
-                    <Router>
-
-                        <Header />
-
-                        <Switch>
-                            <Route path = '/portfolio'>
-                                <Portfolio/>
-                            </Route>
-                            <Route path = '/'>
-                                <Resume/>
-                            </Route>
-                        </Switch>
-
-                        <Footer/>
-
-
-                    </Router>
-
-                </Grid>
-                
-            </Grid>
-        </Container>
-
+              <Footer/>
+            </Router>
+          </Grid>
+        </Grid>
+      </Container>
     </div>
   );
 }

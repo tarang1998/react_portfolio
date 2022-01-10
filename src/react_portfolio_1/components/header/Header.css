@@ -1,13 +1,14 @@
 .header {
   margin-bottom: 30px !important;
-  background-color: white !important;
   padding: 0px 22px 0px 0px !important;
-  border-radius: 6px !important;
+  border-radius: 50px !important;
+  border-style: solid;
+  border-width: 1px;
 }
 
 .header .header_link {
   font-weight: 500;
-  color: darkslategrey !important;
+  font-size: 16px !important;
   margin-right: 12px !important;
 }
 
@@ -16,8 +17,8 @@
 }
 
 .header .header_link_active {
-  font-weight: 700 !important;
-  color: var(--main-color) !important;
+  font-weight: 800 !important;
+  font-size: 18px !important;
   margin-right: 12px !important;
 }
 
@@ -27,13 +28,12 @@
 }
 
 .header .header_home {
-  background-color: var(--main-color);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  border-top-left-radius: 6px !important;
-  border-bottom-left-radius: 6px !important;
+  border-top-left-radius: 50px !important;
+  border-bottom-left-radius: 50px !important;
 }
 
 .header .header-left {

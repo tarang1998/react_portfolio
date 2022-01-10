@@ -15,8 +15,6 @@
 }
 
 .timeline .timeline-dot-header {
-  color: black !important;
-  background-color: var(--main-color) !important;
   min-height: 8px !important;
   font-size: small !important;
   padding: 10px !important;
@@ -30,11 +28,7 @@
   display: none;
 }
 
-/* Remaining Items */
-
 .timeline .timeline-dot {
-  color: black !important;
-  border-color: var(--main-color) !important;
   padding: 2px !important;
 }
 
