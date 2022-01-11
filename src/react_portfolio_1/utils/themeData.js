@@ -6,6 +6,7 @@ const lightTheme = {
     text_color: "#000000",
     contrast_color : "#000000",
 
+    dark: "#000000",
     accentColor: "#E3405F",
     accentBright: "#FC1056",
     projectCard: "#DCE4F2",
@@ -24,6 +25,7 @@ const lightTheme = {
     text_color: "#FFFFFF",
     contrast_color : "#FFFFFF",
 
+    dark: "#000000",
     accentColor: "#E3405F",
     accentBright: "#FC1056",
     projectCard: "#292A2D",

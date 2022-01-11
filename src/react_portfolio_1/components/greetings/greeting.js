@@ -6,7 +6,7 @@ import { Grid  } from "@material-ui/core";
 import { useContext } from 'react'
 import { ThemeContext } from 'styled-components'
 import Fade from 'react-reveal/Fade';
-import FeelingProud from "../../components/feelingProud/FeelingProud";
+import LevitatingMan from "../../utils/levitatingMan/levitatingMan";
 import './greeting.css'
 
 
@@ -42,7 +42,7 @@ const Greetings = () => {
 
           <Grid item xs={12} md={7} className='greeting-image-grid'>
 
-            <FeelingProud theme={currentTheme}/>
+            <LevitatingMan theme={currentTheme}/>
             
           </Grid>
 

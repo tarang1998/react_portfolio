@@ -45,6 +45,31 @@ const introduction = {
 const skills = {
   data: [
     {
+      title: "Mobile App Development",
+      fileName: "MobileDevelopmentImg",
+      skills: [
+        "⚡ Experienced in developing scalable cross-platform mobile applications using Flutter.",
+
+      ],
+      softwareSkills: [
+        {
+          skillName: "Flutter",
+          fontAwesomeClassname: "simple-icons:flutter",
+          style: {
+            color: "#02569B",
+          },
+        },
+        {
+          skillName: "Dart",
+          fontAwesomeClassname: "simple-icons:dart",
+          style: {
+            color: "#29B0EE",
+          },
+        },
+      ]
+
+    },
+    {
       title: "Full Stack Development",
       fileName: "FullStackImg",
       skills: [
@@ -130,20 +155,7 @@ const skills = {
             color: "#f89820",
           },
         },
-        {
-          skillName: "Flutter",
-          fontAwesomeClassname: "simple-icons:flutter",
-          style: {
-            color: "#02569B",
-          },
-        },
-        {
-          skillName: "Dart",
-          fontAwesomeClassname: "simple-icons:dart",
-          style: {
-            color: "#29B0EE",
-          },
-        },
+        
         // {
         //   skillName: "Visual Basic",
         //   fontAwesomeClassname: "simple-icons:dot-net",
