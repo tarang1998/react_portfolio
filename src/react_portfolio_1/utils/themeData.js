@@ -7,8 +7,7 @@ const lightTheme = {
     contrast_color : "#000000",
 
     dark: "#000000",
-    accentColor: "#E3405F",
-    accentBright: "#FC1056",
+    accentColor: "#6C63FF",
     projectCard: "#DCE4F2",
     skinColor: "#F7B799",
     skinColor2: "#FCB696",
@@ -26,8 +25,7 @@ const lightTheme = {
     contrast_color : "#FFFFFF",
 
     dark: "#000000",
-    accentColor: "#E3405F",
-    accentBright: "#FC1056",
+    accentColor: "#6C63FF",
     projectCard: "#292A2D",
     skinColor: "#F7B799",
     skinColor2: "#FCB696",
