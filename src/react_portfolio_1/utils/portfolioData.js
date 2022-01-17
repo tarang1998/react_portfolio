@@ -148,28 +148,7 @@ const skills = {
         //     color: "#3DDC84",
         //   },
         // },
-        // {
-        //   skillName: "Java",
-        //   iconifyIconId: "simple-icons:java",
-        //   style: {
-        //     color: "#f89820",
-        //   },
-        // },
         
-        // {
-        //   skillName: "Visual Basic",
-        //   iconifyIconId: "simple-icons:dot-net",
-        //   style: {
-        //     color: "#029FCE",
-        //   },
-        // },
-        // {
-        //   skillName: "MySQL",
-        //   iconifyIconId: "simple-icons:mysql",
-        //   style: {
-        //     color: "#4479A1",
-        //   },
-        // },
         // {
         //   skillName: "jQuery",
         //   iconifyIconId: "simple-icons:jquery",
@@ -191,34 +170,7 @@ const skills = {
         //     color: "#CA1A22",
         //   },
         // },
-        // {
-        //   skillName: "Git",
-        //   iconifyIconId: "simple-icons:git",
-        //   style: {
-        //     color: "#E94E32",
-        //   },
-        // },
-        // {
-        //   skillName: "C",
-        //   iconifyIconId: "simple-icons:c",
-        //   style: {
-        //     color: "#E94E32",
-        //   },
-        // },
-        // {
-        //   skillName: "C++",
-        //   iconifyIconId: "simple-icons:cplusplus",
-        //   style: {
-        //     color: "#E94E32",
-        //   },
-        // },
-        // {
-        //   skillName: "Python",
-        //   iconifyIconId: "simple-icons:python",
-        //   style: {
-        //     color: "#3776AB",
-        //   },
-        // },
+    
       ],
     },
     {
@@ -284,6 +236,67 @@ const skills = {
             color: "#5b77ef",
           },
         },
+      ],
+    },
+    {
+      title: "Software Development",
+      fileName: "SoftwareDevelopmentImg",
+      skills: [
+        // "⚡ Experience working with google cloud platform",
+      ],
+      softwareSkills: [
+        {
+          skillName: "Git",
+          iconifyIconId: "simple-icons:git",
+          style: {
+            color: "#E94E32",
+          },
+        },
+        {
+          skillName: "C",
+          iconifyIconId: "simple-icons:c",
+          style: {
+            color: "#E94E32",
+          },
+        },
+        {
+          skillName: "C++",
+          iconifyIconId: "simple-icons:cplusplus",
+          style: {
+            color: "#E94E32",
+          },
+        },
+        {
+          skillName: "Python",
+          iconifyIconId: "simple-icons:python",
+          style: {
+            color: "#3776AB",
+          },
+        },
+        {
+          skillName: "Java",
+          iconifyIconId: "simple-icons:java",
+          style: {
+            color: "#f89820",
+          },
+        },
+        
+        // {
+        //   skillName: "Visual Basic",
+        //   iconifyIconId: "simple-icons:dot-net",
+        //   style: {
+        //     color: "#029FCE",
+        //   },
+        // },
+        
+        {
+          skillName: "MySQL",
+          iconifyIconId: "simple-icons:mysql",
+          style: {
+            color: "#4479A1",
+          },
+        },
+       
       ],
     },
   ],

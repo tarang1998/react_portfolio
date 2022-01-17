@@ -8,6 +8,8 @@ import FullStackImg from '../../utils/skillSVGs/FullStackImg';
 import { Grid } from '@material-ui/core';
 import MobileDevelopmentImg from '../../utils/skillSVGs/MobileDevelopmentImg';
 import SoftwareSkill from '../softwareSkills/softwareSkill';
+import SoftwareDevelopmentImg from '../../utils/skillSVGs/SoftwareDevelopmentImg';
+
 
 
 function Skills(props){
@@ -42,6 +44,8 @@ function GetSkillSvg(props) {
         return <CloudInfraImg theme={props.theme} />;
     else if (props.fileName === "MobileDevelopmentImg")
         return <MobileDevelopmentImg theme={props.theme} />;
+    else if (props.fileName === "SoftwareDevelopmentImg")
+        return <SoftwareDevelopmentImg theme={props.theme}/>
     else
         return <></>
 
