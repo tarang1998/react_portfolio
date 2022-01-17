@@ -97,18 +97,16 @@ function SkillSection() {
           } else {
             return (
 
-              <Grid container xs={12} style={{
+              <Grid container className='skills-section' xs={12} style={{
                 'margin-top': '0px'
               }}>
 
-                <Grid item xs={6} >
+                <Grid item xs={6} className='skills-section-text-div' >
 
                   <Fade left duration={1000}>
-                    <div className='skills-section-text-div'>
                       <h1 className="skills-section-heading" style={{ color: currentTheme.contrast_color }}>
                         {skill.title}
                       </h1>
-                    </div>
                     
                   </Fade>
 
@@ -116,7 +114,19 @@ function SkillSection() {
                     <SoftwareSkill logos={skill.softwareSkills} />
                   </Fade>
 
-
+                  <Fade left duration={2000}>
+                    <div>
+                      {skill.skills.map((skillSentence) => {
+                        return (
+                          <p
+                            className="skills-text"
+                            style={{ color: currentTheme.contrast_color }}>
+                            {skillSentence}
+                          </p>
+                        );
+                      })}
+                    </div>
+                  </Fade>
                 </Grid>
 
                 <Grid item xs={6}>
@@ -134,40 +144,6 @@ function SkillSection() {
 
               </Grid>
 
-              // <div className="skills-main-div">
-
-              //   <div className="skills-text-div">
-              //     <Fade left duration={1000}>
-              //       <h1 className="skills-heading" style={{ color: theme.text }}>
-              //         {skill.title}
-              //       </h1>
-              //     </Fade>
-              //     <Fade left duration={1500}>
-              //       <SoftwareSkill logos={skill.softwareSkills} />
-              //     </Fade>
-              //     <Fade left duration={2000}>
-              //       <div>
-              //         {skill.skills.map((skillSentence) => {
-              //           return (
-              //             <p
-              //               className="subTitle skills-text"
-              //               style={{ color: theme.secondaryText }}
-              //             >
-              //               {skillSentence}
-              //             </p>
-              //           );
-              //         })}
-              //       </div>
-              //     </Fade>
-              //   </div>
-
-              //   <Fade right duration={2000}>
-              //     <div className="skills-image-div">
-              //       <GetSkillSvg fileName={skill.fileName} theme={theme} />
-              //     </div>
-              //   </Fade>
-                
-              // </div>
             );
           }
         })}

@@ -40,7 +40,8 @@
 }
 
 .skills-text {
-  font-size: 20px;
+  font-size: 20px !important;
+  margin-top: 10px;
 }
 
 @media (max-width: 1380px) {
@@ -54,7 +55,8 @@
   }
 
   .skills-text {
-    font-size: 18px;
+    font-size: 18px !important;
+    margin-top: 10px;
   }
 }
 @media (max-width: 1110px) {
@@ -77,6 +79,7 @@
   }
 
   .skills-text {
-    font-size: 16px;
+    font-size: 16px !important;
+    margin-top: 10px;
   }
 }

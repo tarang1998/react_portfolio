@@ -74,7 +74,6 @@ const skills = {
       title: "Full Stack Development",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Experienced in developing scalable cross-platform mobile applications using Flutter.",
         "⚡ Developing Web Applications using the React library"
       ],
       softwareSkills: [
