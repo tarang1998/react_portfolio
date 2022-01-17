@@ -6,6 +6,24 @@
   --main-text-color: grey;
 
   --main-link-color: lightsalmon;
+
+  --heading1Size: 75px;
+
+  --heading2Size: 30px;
+
+  --textSize: 20px;
+
+  --heading1SizeMaxWidth1380: 65px;
+
+  --heading2SizeMaxWidth1380: 25px;
+
+  --textSizeMaxWidth1380: 17px;
+
+  --heading1SizeMaxWidth1100: 55px;
+
+  --heading2SizeMaxWidth1100: 20px;
+
+  --textSizeMaxWidth1100: 16px;
 }
 
 .top-60 {

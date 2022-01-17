@@ -19,7 +19,7 @@
 
 .greeting-p {
   margin-left: 50px;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .greeting-image-grid > * {
@@ -39,7 +39,7 @@
   }
 
   .greeting-p {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 
