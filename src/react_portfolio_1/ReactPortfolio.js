@@ -38,14 +38,16 @@ function ReactPortfolio(props) {
                 <div className="main_content main_border container_shadow "
                   style={{
                     'background-color': theme.body_color,
-                    'border-color' : theme.contrast_color
+                    'border-color' : theme.contrast_color,
+                    'max-height' : '200px',
+                    'overflow-y': 'scroll',
                   }}>
                   <Switch>
                     <Route path="/portfolio">
                       <Portfolio />
                     </Route>
                     <Route path="/">
-                      <Home theme={theme}/>
+                      <Home theme={theme} style={{}}/>
                     </Route>
                   </Switch>
                 </div>
