@@ -10,16 +10,19 @@
   font-weight: 500;
   font-size: 16px !important;
   margin-right: 12px !important;
+  line-height: 40px;
 }
 
 .header .nav-link {
   padding: 0px !important;
+  text-align: center;
 }
 
 .header .header_link_active {
   font-weight: 800 !important;
   font-size: 18px !important;
   margin-right: 12px !important;
+  line-height: 40px;
 }
 
 .header .header_link:hover {
@@ -43,6 +46,8 @@
 .header .header-right {
   display: flex !important;
   align-items: center !important;
+  justify-content: center !important;
+  padding: 10px;
 }
 
 .header .header-right > a .MuiSvgIcon-root {
