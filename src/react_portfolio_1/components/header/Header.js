@@ -87,16 +87,22 @@ const Header = (props) => {
 
       <Nav.Link as={NavLink} to="/">
         <Navbar.Brand className="header_home" style={{
-          'background-color':props.theme.contrast_color
+          // 'background-color':props.theme.contrast_color
         }}>
           <HomeRounded 
             style={{
-              'color':props.theme.body_color
+              'color':props.theme.contrast_color,
+              'font-size': '30px'
             }}/>
         </Navbar.Brand>
       </Nav.Link>
 
-      <Navbar.Toggle />
+
+      <Navbar.Toggle  style={{
+        //  'border-color':props.theme.contrast_color,
+         'background-color': props.theme.projectCard
+
+      }}/>
 
       <Navbar.Collapse>
         <Nav className="header-left">

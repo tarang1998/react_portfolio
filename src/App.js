@@ -5,6 +5,7 @@ import React, { useState } from "react";
 
 import {themes} from "./react_portfolio_1/utils/themeData"
 import { ThemeProvider } from "styled-components";
+import './App.css';
 
 
 function App() {

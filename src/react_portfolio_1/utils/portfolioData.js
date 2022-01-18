@@ -71,10 +71,10 @@ const skills = {
 
     },
     {
-      title: "Full Stack Development",
+      title: "Web App Development",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Developing Web Applications using the React library"
+        "⚡ Experienced in developing Web Applications using the React library"
       ],
       softwareSkills: [
         {
