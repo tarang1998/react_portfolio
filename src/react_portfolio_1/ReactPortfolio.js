@@ -48,7 +48,7 @@ function ReactPortfolio(props) {
                       <WorkExperience />
                     </Route>
                     <Route path="/">
-                      <Home theme={theme} style={{}}/>
+                      <Home/>
                     </Route>
                   </Switch>
                 </div>

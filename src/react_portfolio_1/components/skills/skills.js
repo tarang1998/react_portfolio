@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 import './skills.css'
 import { skills } from '../../utils/portfolioData';
 import CloudInfraImg from '../../utils/skillSVGs/CloudInfraImg';
-import FullStackImg from '../../utils/skillSVGs/FullStackImg';
+import WebAppDevelopment from '../../utils/skillSVGs/WebAppDevelopment';
 import { Grid } from '@material-ui/core';
 import MobileDevelopmentImg from '../../utils/skillSVGs/MobileDevelopmentImg';
 import SoftwareSkill from '../softwareSkills/softwareSkill';
@@ -12,7 +12,7 @@ import SoftwareDevelopmentImg from '../../utils/skillSVGs/SoftwareDevelopmentImg
 
 
 
-function Skills(props){
+function Skills(){
 
     const currentTheme = useContext(ThemeContext)
 
@@ -39,7 +39,7 @@ function Skills(props){
 function GetSkillSvg(props) {
 
     if (props.fileName === "FullStackImg")
-        return <FullStackImg theme={props.theme} />;
+        return <WebAppDevelopment theme={props.theme} />;
     else if (props.fileName === "CloudInfraImg")
         return <CloudInfraImg theme={props.theme} />;
     else if (props.fileName === "MobileDevelopmentImg")
