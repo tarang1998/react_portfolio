@@ -2,7 +2,7 @@ import { Container, Grid} from "@material-ui/core";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Profile from "./components/profile/Profile";
-import Portfolio from "./pages/portfolio/Portfolio";
+import WorkExperience from "./pages/workExperience/workExperience";
 import Home from "./pages/home/Home";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -32,6 +32,7 @@ function ReactPortfolio(props) {
 
           <Grid item xs>
             <Router>
+              
               <Header theme={theme} setTheme={setTheme}/>
 
               <Fade duration={1000} bottom>
@@ -43,8 +44,8 @@ function ReactPortfolio(props) {
                     'overflow-y': 'scroll',
                   }}>
                   <Switch>
-                    <Route path="/portfolio">
-                      <Portfolio />
+                    <Route path="/workExperience">
+                      <WorkExperience />
                     </Route>
                     <Route path="/">
                       <Home theme={theme} style={{}}/>
