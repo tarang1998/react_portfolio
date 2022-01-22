@@ -7,23 +7,37 @@
 
   --main-link-color: lightsalmon;
 
-  --heading1Size: 75px;
+  /* Max width */
 
-  --heading2Size: 30px;
+  --titleSize: 75px;
+
+  --subtitleSize: 40px;
 
   --textSize: 20px;
 
-  --heading1SizeMaxWidth1380: 65px;
+  /* Max width - 1380 */
 
-  --heading2SizeMaxWidth1380: 25px;
+  --titleSizeMaxWidth1380: 65px;
 
-  --textSizeMaxWidth1380: 17px;
+  --subtitleSizeMaxWidth1380: 35px;
 
-  --heading1SizeMaxWidth1100: 55px;
+  --textSizeMaxWidth1380: 18px;
 
-  --heading2SizeMaxWidth1100: 20px;
+  /* Max width - 1110 */
 
-  --textSizeMaxWidth1100: 16px;
+  --titleSizeMaxWidth1100: 55px;
+
+  --subtitleSizeSizeMaxWidth1100: 30px;
+
+  --textSizeMaxWidth1100: 17px;
+
+  /* Max width - 560  */
+
+  --titleSizeMaxWidth560: 55px;
+
+  --subtitleSizeSizeMaxWidth560: 30px;
+
+  --textSizeMaxWidth560: 17px;
 }
 
 .top-60 {

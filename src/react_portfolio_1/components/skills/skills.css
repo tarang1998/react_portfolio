@@ -3,7 +3,7 @@
 }
 
 .skills-header {
-  font-size: 55px;
+  font-size: var(--titleSize);
   line-height: 1.1;
   font-family: "Google Sans Regular";
   text-align: center;
@@ -32,7 +32,7 @@
 }
 
 .skills-section-heading {
-  font-size: 40px;
+  font-size: var(--subtitleSize);
   font-weight: 400;
   text-align: center;
   padding-bottom: 10px;
@@ -40,46 +40,50 @@
 }
 
 .skills-text {
-  font-size: 20px !important;
+  font-size: var(--textSize) !important;
   margin-top: 10px;
 }
 
 @media (max-width: 1380px) {
   .skills-header {
-    font-size: 40px;
+    font-size: var(--titleSizeMaxWidth1380);
   }
 
   .skills-section-heading {
-    font-size: 30px;
+    font-size: var(--subtitleSizeMaxWidth1380);
     font-weight: 300;
   }
 
   .skills-text {
-    font-size: 18px !important;
+    font-size: var(--textSizeMaxWidth1380) !important;
     margin-top: 10px;
   }
 }
 @media (max-width: 1110px) {
   .skills-header {
-    font-size: 35px;
+    font-size: var(--titleSizeMaxWidth1100);
   }
 
   .skills-section-heading {
-    font-size: 25px;
+    font-size: var(--subtitleSizeSizeMaxWidth1100);
   }
 
   .skills-text {
-    font-size: 17px;
+    font-size: var(--textSizeMaxWidth1100);
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 560px) {
+  .skills-header {
+    font-size: var(--titleSizeMaxWidth560);
+  }
+
   .skills-section-heading {
-    font-size: 20px;
+    font-size: var(--subtitleSizeSizeMaxWidth560);
   }
 
   .skills-text {
-    font-size: 16px !important;
+    font-size: var(--textSizeMaxWidth560) !important;
     margin-top: 10px;
   }
 }

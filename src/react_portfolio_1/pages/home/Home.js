@@ -35,9 +35,9 @@ const Home = (props) => {
 
       <Skills/>
 
-      <Grid container className="section"></Grid>
+      {/* <Grid container className="section"></Grid>
 
-      <Grid container className="section"></Grid>
+      <Grid container className="section"></Grid> */}
     </>
   );
 };
