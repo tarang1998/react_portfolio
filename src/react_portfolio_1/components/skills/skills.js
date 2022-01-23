@@ -109,7 +109,7 @@ function SkillSection() {
                 >
 
                 <Fade left duration={2000}>
-                  <div className="skills-section-image-div" style={{'order':'2'}}>
+                  <div className="skills-section-image-div">
                     <GetSkillSvg fileName={skill.fileName} theme={currentTheme} />
                   </div>
                 </Fade>
@@ -129,7 +129,7 @@ function SkillSection() {
                     <SoftwareSkill logos={skill.softwareSkills} />
                   </Fade>
 
-                  <Fade left duration={2000}>
+                  <Fade right duration={2000}>
                     <div>
                       {skill.skills.map((skillSentence) => {
                         return (
