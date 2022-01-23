@@ -85,6 +85,12 @@
   }
 }
 
+@media (max-width: 960px) {
+  .skills-section-image-grid {
+    order: 2;
+  }
+}
+
 @media (max-width: 760px) {
   .skills-header {
     font-size: var(--titleSizeMaxWidth760);

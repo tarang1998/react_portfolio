@@ -103,10 +103,13 @@ function SkillSection() {
                 'margin-top': '0px',
               }}>
 
-                <Grid item xs={12} md={6} style={{'order':'2'}}>
+                <Grid item xs={12} md={6} 
+                // style={{'order':'2'}}
+                className='skills-section-image-grid'
+                >
 
                 <Fade left duration={2000}>
-                  <div className="skills-section-image-div">
+                  <div className="skills-section-image-div" style={{'order':'2'}}>
                     <GetSkillSvg fileName={skill.fileName} theme={currentTheme} />
                   </div>
                 </Fade>
@@ -115,7 +118,7 @@ function SkillSection() {
 
                 <Grid item xs={12}  md={6}  className='skills-section-text-div' >
 
-                  <Fade left duration={1000}>
+                  <Fade right duration={1000}>
                       <h1 className="skills-section-heading" style={{ color: currentTheme.contrast_color }}>
                         {skill.title}
                       </h1>
