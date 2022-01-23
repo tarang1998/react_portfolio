@@ -22,7 +22,7 @@ const Greetings = () => {
 
         <Grid container className="greeting">
 
-          <Grid item xs={12} md={5} className="greeting-text-grid">
+          <Grid item xs={12} md={5} lg={5} xl ={5} className="greeting-text-grid">
             <div style={{
               color: currentTheme.contrast_color
             }}>
@@ -40,7 +40,7 @@ const Greetings = () => {
             </div>
           </Grid>
 
-          <Grid item xs={12} md={7} className='greeting-image-grid'>
+          <Grid item xs={12} md={7} lg={7} xl ={7} className='greeting-image-grid'>
 
             <LevitatingMan theme={currentTheme}/>
             

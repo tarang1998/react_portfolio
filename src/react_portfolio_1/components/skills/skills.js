@@ -60,52 +60,102 @@ function SkillSection() {
         {skills.data.map((skill, index) => {
           if (index % 2 === 0) {
             return (
-              <div className="skills-section">
+
+              // <div className="skills-section">
+
+              //   <Fade left duration={2000}>
+              //     <div className="skills-section-image-div">
+              //       <GetSkillSvg fileName={skill.fileName} theme={currentTheme} />
+              //     </div>
+              //   </Fade>
+  
+              //   <div className="skills-section-text-div">
+
+              //     <Fade right duration={1000}>
+              //       <h1 className="skills-section-heading" style={{ color: currentTheme.contrast_color }}>
+              //         {skill.title}
+              //       </h1>
+              //     </Fade>
+
+              //     <Fade right duration={1500}>
+              //       <SoftwareSkill logos={skill.softwareSkills} />
+              //     </Fade>
+
+              //     <Fade right duration={2000}>
+              //       <div>
+              //         {skill.skills.map((skillSentence) => {
+              //           return (
+              //             <p
+              //               className="skills-text"
+              //               style={{ color: currentTheme.contrast_color }}
+              //             >
+              //               {skillSentence}
+              //             </p>
+              //           );
+              //         })}
+              //       </div>
+              //     </Fade>
+
+              //   </div>
+              // </div>
+
+              <Grid container xs={12} style={{
+                'margin-top': '0px',
+              }}>
+
+                <Grid item xs={12} md={6} style={{'order':'2'}}>
 
                 <Fade left duration={2000}>
                   <div className="skills-section-image-div">
                     <GetSkillSvg fileName={skill.fileName} theme={currentTheme} />
                   </div>
                 </Fade>
-  
-                <div className="skills-section-text-div">
 
-                  <Fade right duration={1000}>
-                    <h1 className="skills-section-heading" style={{ color: currentTheme.contrast_color }}>
-                      {skill.title}
-                    </h1>
+                </Grid>
+
+                <Grid item xs={12}  md={6}  className='skills-section-text-div' >
+
+                  <Fade left duration={1000}>
+                      <h1 className="skills-section-heading" style={{ color: currentTheme.contrast_color }}>
+                        {skill.title}
+                      </h1>
+                    
                   </Fade>
 
                   <Fade right duration={1500}>
                     <SoftwareSkill logos={skill.softwareSkills} />
                   </Fade>
 
-                  <Fade right duration={2000}>
+                  <Fade left duration={2000}>
                     <div>
                       {skill.skills.map((skillSentence) => {
                         return (
                           <p
                             className="skills-text"
-                            style={{ color: currentTheme.contrast_color }}
-                          >
+                            style={{ color: currentTheme.contrast_color }}>
                             {skillSentence}
                           </p>
                         );
                       })}
                     </div>
                   </Fade>
+                </Grid>
 
-                </div>
-              </div>
+                
+
+                
+
+
+              </Grid>
             );
           } else {
             return (
 
-              <Grid container className='skills-section' xs={12} style={{
-                'margin-top': '0px'
+              <Grid container xs={12} style={{
+                'margin-top': '0px',
               }}>
 
-                <Grid item xs={6} className='skills-section-text-div' >
+                <Grid item xs={12}  md={6}  className='skills-section-text-div' >
 
                   <Fade left duration={1000}>
                       <h1 className="skills-section-heading" style={{ color: currentTheme.contrast_color }}>
@@ -133,7 +183,7 @@ function SkillSection() {
                   </Fade>
                 </Grid>
 
-                <Grid item xs={6}>
+                <Grid item xs={12} md={6}>
 
                   <Fade right duration={2000}>
                     <div className="skills-section-image-div">

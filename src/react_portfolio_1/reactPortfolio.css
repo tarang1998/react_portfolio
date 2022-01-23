@@ -25,19 +25,19 @@
 
   /* Max width - 1110 */
 
-  --titleSizeMaxWidth1100: 55px;
+  --titleSizeMaxWidth1100: 50px;
 
   --subtitleSizeSizeMaxWidth1100: 30px;
 
   --textSizeMaxWidth1100: 17px;
 
-  /* Max width - 560  */
+  /* Max width - 760  */
 
-  --titleSizeMaxWidth560: 55px;
+  --titleSizeMaxWidth760: 55px;
 
-  --subtitleSizeSizeMaxWidth560: 30px;
+  --subtitleSizeSizeMaxWidth760: 30px;
 
-  --textSizeMaxWidth560: 17px;
+  --textSizeMaxWidth760: 17px;
 }
 
 .top-60 {

@@ -24,13 +24,13 @@ function ReactPortfolio(props) {
     }}>
       <Container maxWidth="xl" className="top-20">
         <Grid container spacing={3}>
-          <Grid item xs={12} sm={12} md={4} lg={3}>
+          <Grid item xs={12} sm={12} md={12} lg={3} xl={3}>
             <div>
               <Profile theme = {theme}/>
             </div>
           </Grid>
 
-          <Grid item xs>
+          <Grid item xs={12} sm={12} md={12} lg={9} xl={9}>
             <Router>
               
               <Header theme={theme} setTheme={setTheme}/>

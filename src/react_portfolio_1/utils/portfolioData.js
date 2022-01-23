@@ -9,7 +9,7 @@ const personalData = {
 };
 
 const greetingData = {
-  title : 'Hello 👋'
+  title : 'Hello👋'
 }
 
 const mediaLinks = {
