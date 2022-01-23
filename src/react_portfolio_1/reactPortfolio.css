@@ -1,11 +1,13 @@
 :root {
-  --main-color: #ffc500;
+  --main-color: #6c63ff;
 
   --main-title-color: black;
 
   --main-text-color: grey;
 
   --main-link-color: lightsalmon;
+
+  --colorBlack: black;
 
   --font-google-sans-bold: "Google Sans Bold";
 
