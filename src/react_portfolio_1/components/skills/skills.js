@@ -2,13 +2,13 @@ import React, {useContext} from 'react'
 import { ThemeContext } from 'styled-components';
 import Fade from 'react-reveal/Fade';
 import './skills.css'
-import { skills } from '../../utils/portfolioData';
 import CloudInfraImg from '../../utils/skillSVGs/CloudInfraImg';
 import WebAppDevelopment from '../../utils/skillSVGs/WebAppDevelopment';
 import { Grid } from '@material-ui/core';
 import MobileDevelopmentImg from '../../utils/skillSVGs/MobileDevelopmentImg';
 import SoftwareSkill from '../softwareSkills/softwareSkill';
 import SoftwareDevelopmentImg from '../../utils/skillSVGs/SoftwareDevelopmentImg';
+import { skills } from '../../utils/skillData';
 
 
 
