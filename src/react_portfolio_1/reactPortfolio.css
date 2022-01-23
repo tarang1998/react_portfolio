@@ -7,6 +7,12 @@
 
   --main-link-color: lightsalmon;
 
+  --font-google-sans-bold: "Google Sans Bold";
+
+  --font-google-sans-medium: "Google Sans Medium";
+
+  --font-google-sans-regular: "Google Sans Regular";
+
   /* Max width */
 
   --titleSize: 75px;
