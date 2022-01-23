@@ -1,0 +1,73 @@
+.workExperienceImageGrid {
+  /* margin-left: 30px !important; */
+  margin-top: 50px !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.workExperienceImageGrid > * {
+  max-width: 100%;
+  height: auto;
+}
+
+.workExperienceTextGrid {
+  text-align: start;
+  margin-top: 40px !important;
+}
+
+.workExperienceTextGridHeadingText {
+  font-size: var(--titleSize);
+  font-weight: 400;
+  font-family: var(--font-google-sans-medium);
+  line-height: 1.1;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.workExperienceTextGridSubHeadingText {
+  font-size: var(--subtitleSize);
+  font-family: var(--font-google-sans-regular);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.workExperienceTextGridDescription {
+  font-size: var(--textSize);
+  line-height: 30px;
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: var(--font-google-sans-medium);
+}
+
+.workExperienceTextGridDescriptionCompanyURL {
+  text-decoration: none;
+}
+
+@media (max-width: 1380px) {
+  .workExperienceTextGridHeadingText {
+    font-size: var(--titleSizeMaxWidth1380);
+  }
+
+  .workExperienceTextGridSubHeadingText {
+    font-size: var(--subtitleSizeMaxWidth1380);
+  }
+
+  .workExperienceTextGridDescription {
+    font-size: var(--textSizeMaxWidth1380);
+  }
+}
+
+@media (max-width: 1110px) {
+  .workExperienceTextGridHeadingText {
+    font-size: var(--titleSizeMaxWidth1100);
+  }
+
+  .workExperienceTextGridSubHeadingText {
+    font-size: var(--subtitleSizeSizeMaxWidth1100);
+  }
+
+  .workExperienceTextGridDescription {
+    font-size: var(--textSizeMaxWidth1100);
+  }
+}

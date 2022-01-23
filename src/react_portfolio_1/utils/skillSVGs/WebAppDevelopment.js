@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function FullStackImg(props) {
+export default function WebAppDevelopment(props) {
   const theme = props.theme;
   return (
     <svg
@@ -32,7 +32,7 @@ export default function FullStackImg(props) {
       <path
         d="M264.74607,558.82036l44.58576,64.05921L413.2772,709.72s96.0508,22.368,82.89315,38.15717S402.75109,732.088,402.75109,732.088s-119.73455-86.84044-123.68184-93.41927S231.70174,570.249,231.70174,570.249Z"
         transform="translate(-61.96814 -72.38605)"
-        fill={theme.skinColor2}
+        fill={theme.skinColor}
       />
       <path
         d="M264.74607,558.82036l44.58576,64.05921L413.2772,709.72s96.0508,22.368,82.89315,38.15717S402.75109,732.088,402.75109,732.088s-119.73455-86.84044-123.68184-93.41927S231.70174,570.249,231.70174,570.249Z"

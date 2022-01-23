@@ -4,22 +4,22 @@
 .greeting-title {
   margin-top: 130px;
   margin-left: 50px;
-  font-size: 75px;
+  font-size: var(--titleSize);
   line-height: 6px;
-  font-family: "Google Sans Bold";
+  font-family: var(--font-google-sans-bold);
 }
 
 .greeting-sub-title {
-  font-size: 30px;
+  font-size: var(--subtitleSize);
   line-height: 40px;
   margin-left: 50px;
-  margin-top: 25px;
-  font-family: "Google Sans Medium";
+  margin-top: 30px;
+  font-family: var(--font-google-sans-medium);
 }
 
 .greeting-p {
   margin-left: 50px;
-  font-size: 18px;
+  font-size: var(--textSize);
 }
 
 .greeting-image-grid > * {
@@ -29,32 +29,32 @@
 
 @media (max-width: 1380px) {
   .greeting-title {
-    font-size: 60px;
+    font-size: var(--titleSizeMaxWidth1380);
     line-height: 5px;
   }
 
   .greeting-sub-title {
-    font-size: 20px;
+    font-size: var(--subtitleSizeMaxWidth1380);
     line-height: 40px;
   }
 
   .greeting-p {
-    font-size: 17px;
+    font-size: var(--textSizeMaxWidth1380);
   }
 }
 
 @media (max-width: 1110px) {
   .greeting-title {
-    font-size: 50px;
+    font-size: var(--titleSizeMaxWidth1100);
     line-height: 5px;
   }
 
   .greeting-sub-title {
-    font-size: 20px;
+    font-size: var(--subtitleSizeSizeMaxWidth1100);
     line-height: 40px;
   }
 
   .greeting-p {
-    font-size: 16px;
+    font-size: var(--textSizeMaxWidth1100);
   }
 }

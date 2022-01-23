@@ -1,16 +1,12 @@
 import React from "react";
 
-import { Grid  } from "@material-ui/core";
 import './home.css'
-import { useContext } from 'react'
-import { ThemeContext } from 'styled-components'
 import Greetings from "../../components/greetings/greeting";
 import Skills from "../../components/skills/skills";
 
 
-const Home = (props) => {
+const Home = () => {
 
-  const currentTheme = useContext(ThemeContext)
 
   return (
     <>
@@ -35,9 +31,9 @@ const Home = (props) => {
 
       <Skills/>
 
-      <Grid container className="section"></Grid>
+      {/* <Grid container className="section"></Grid>
 
-      <Grid container className="section"></Grid>
+      <Grid container className="section"></Grid> */}
     </>
   );
 };
