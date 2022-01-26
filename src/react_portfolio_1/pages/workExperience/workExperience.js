@@ -57,7 +57,12 @@ const WorkExperience = () => {
 
             </Fade>
 
-            <ExperienceAccordion sections={experience['sections']}/>
+            <Fade duration={1000} right>
+
+                <ExperienceAccordion sections={experience['sections']}/>
+
+            </Fade>
+
 
         </>
         
