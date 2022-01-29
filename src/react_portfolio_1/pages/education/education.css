@@ -6,3 +6,62 @@
   max-width: 100%;
   height: auto;
 }
+
+.educationHeadingText {
+  text-align: start;
+  margin-top: 40px !important;
+}
+
+.educationHeadingTextTitle {
+  font-size: var(--titleSize);
+  font-weight: 400;
+  font-family: var(--font-google-sans-medium);
+  line-height: 1.1;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.educationHeadingTextSubtitle {
+  font-size: var(--subtitleSize);
+  font-family: var(--font-google-sans-regular);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.educationHeadingTextDescription {
+  font-size: var(--textSize);
+  line-height: 30px;
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: var(--font-google-sans-medium);
+  text-align: center;
+}
+
+@media (max-width: 1380px) {
+  .educationHeadingTextTitle {
+    font-size: var(--titleSizeMaxWidth1380);
+  }
+
+  .educationHeadingTextSubtitle {
+    font-size: var(--subtitleSizeMaxWidth1380);
+  }
+
+  .educationHeadingTextDescription {
+    font-size: var(--textSizeMaxWidth1380);
+  }
+}
+
+@media (max-width: 1110px) {
+  .educationHeadingTextTitle {
+    font-size: var(--titleSizeMaxWidth1100);
+  }
+
+  .educationHeadingTextSubtitle {
+    font-size: var(--subtitleSizeSizeMaxWidth1100);
+  }
+
+  .educationHeadingTextDescription {
+    font-size: var(--textSizeMaxWidth1100);
+  }
+}
