@@ -1,4 +1,4 @@
-import { Grid } from "@material-ui/core";
+import {  Grid } from "@material-ui/core";
 import React from "react";
 import EducationImg from "../../utils/educationSVGs/educationImg";
 import './education.css'
@@ -6,8 +6,8 @@ import './education.css'
 import { useContext } from 'react'
 import { ThemeContext } from 'styled-components'
 import { education } from "../../utils/educationData";
+import Fade from 'react-reveal/Fade';
 
-import { DarkTheme, LightTheme, ThemeProvider } from "baseui"; // Default Theming of baseUI
 
 
 const Education = () => {
@@ -18,14 +18,17 @@ const Education = () => {
   return (
 
 
-      <div class='educationPage' >
+      <div class='educationPage' style={{
+        'color':currentTheme.contrast_color
+      }} >
+
         <Grid container className="educationHeading">
 
           <Grid item xs={12} md={5} className="educationHeadingImage">
               <EducationImg theme={currentTheme}/>
           </Grid>
 
-          <Grid item xs={12} md={7} className="educationHeadingText">
+          <Grid item xs={12} md={7} className="educationHeadingText" >
 
             <div className="educationHeadingTextTitle">
               {education['title']}
@@ -42,6 +45,27 @@ const Education = () => {
           </Grid>
 
         </Grid> 
+
+        <div className="educationDegreesDiv">
+          <Fade bottom duration={2000} distance="20px">
+
+            <h1 className="educationDegreesDivHeader">
+              Degrees Received
+            </h1>
+
+          </Fade>
+
+          <div className="educationDegreesDivBody">
+            {education['degrees'].map((degree)=>{
+              
+            })}
+
+          </div>
+
+
+        </div>
+
+
       </div>
 
 

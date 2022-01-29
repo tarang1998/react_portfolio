@@ -38,6 +38,17 @@
   text-align: center;
 }
 
+.educationDegreesDiv {
+  margin-top: 70px;
+}
+
+.educationDegreesDivHeader {
+  font-size: var(--subtitleSize);
+  line-height: 1.1;
+  font-family: var(--font-google-sans-regular);
+  text-align: center;
+}
+
 @media (max-width: 1380px) {
   .educationHeadingTextTitle {
     font-size: var(--titleSizeMaxWidth1380);
@@ -49,6 +60,10 @@
 
   .educationHeadingTextDescription {
     font-size: var(--textSizeMaxWidth1380);
+  }
+
+  .educationDegreesDivHeader {
+    font-size: var(--subtitleSizeMaxWidth1380);
   }
 }
 
@@ -63,5 +78,9 @@
 
   .educationHeadingTextDescription {
     font-size: var(--textSizeMaxWidth1100);
+  }
+
+  .educationDegreesDivHeader {
+    font-size: var(--subtitleSizeSizeMaxWidth1100);
   }
 }
