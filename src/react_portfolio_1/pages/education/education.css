@@ -1,0 +1,8 @@
+.educationHeadingImage {
+  margin-top: 50px !important;
+}
+
+.educationHeadingImage > * {
+  max-width: 100%;
+  height: auto;
+}
