@@ -7,7 +7,7 @@ export const experience = {
     description1 : "💻 Open to work on freelancing Projects.",
 
     currentCompanyName : "Cerebranium.",
-    currentCompanyWebsiteLink : "https://cerebranium.com/",
+    currentCompanyWebsiteLink : "https://www.myracle.io/",
 
     sections: [
         {
@@ -16,13 +16,22 @@ export const experience = {
             {
               title: "Software Development Engineer 2",
               company: "Cerebranium",
-              company_url: "https://cerebranium.com/",
+              company_url: "https://www.myracle.io/",
               logo_path: "cerebraniumLogo.png",
               duration: "Nov 2020 - Present",
               description:[
+
                 {
-                  icon:`🔐`,
-                  text:`Currently working on an offline mobile first exam conduction platform, leveraging AI to increase the effeciency of the institute while maintaining the exam integrity and security.`
+                  icon:`⌨️`,
+                  text:`Currently working on developing learning experiences to provide an engaged way of learning using Unity3D.`
+                },
+                {
+                  icon:`📂`,
+                  text:`Designed database schema and data models to satisfy product requirements keeping forward compatibility in mind.`
+                },
+                {
+                  icon:`🛢`,
+                  text:`Was responsible for migrating the database from a NoSQL database to a relational database.`
                 },
                 {
                   icon:`☁️`,
@@ -44,6 +53,7 @@ export const experience = {
                   icon:`📈`,
                   text:`Handled Error Monitoring.`
                 },
+               
                 
               ],
             },
@@ -63,6 +73,10 @@ export const experience = {
                 {
                   icon:`📱`,
                   text:`Built two scalable cross-platform mobile applications Promexa and Promexa Institution in Flutter which are currently live on the app store and play store.`,
+                },
+                {
+                  icon:`🖥`,
+                  text:` With the aim of digitising education the application is capable for conducting offline AI proctored assessments leveraging AI to reduce the burden on the supervisors.`
                 }
                 
               ],

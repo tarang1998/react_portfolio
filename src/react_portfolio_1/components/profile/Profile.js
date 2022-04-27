@@ -23,7 +23,9 @@ const Profile = (props) => {
       <div className="profile container_shadow "
         style = {{
           'background-color': props.theme.body_color,
-          'border-color': props.theme.contrast_color
+          'border-color': props.theme.contrast_color,
+         
+        
 
         }}
         >
