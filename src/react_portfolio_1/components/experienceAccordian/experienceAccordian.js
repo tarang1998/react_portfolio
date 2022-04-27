@@ -2,11 +2,12 @@ import React from "react";
 import { Accordion, Panel } from "baseui/accordion";
 import './experienceAccordian.css'
 
-import { DarkTheme, LightTheme, ThemeProvider } from "baseui"; // Default Theming 
+import { DarkTheme, LightTheme, ThemeProvider } from "baseui"; // Default Theming of baseUI
 
 
 import { useContext } from 'react'
 import { ThemeContext } from 'styled-components'
+import ExperienceCard from "../experienceCard/experienceCard";
 
 
 function ExperienceAccordion(props) {
@@ -35,16 +36,16 @@ function ExperienceAccordion(props) {
                 key={section["title"]}
               >
                 
-
-                {/* {section["experiences"].map((experience) => {
+                {section["experiences"].map((experience) => {
                   return (
-                    <ExperienceCard experience={experience} theme={theme} />
+                    <ExperienceCard experience={experience} theme={currentTheme} />
                   );
-                })} */}
+                })}
               </Panel>
             );
           })}
         </Accordion>
+
     </ThemeProvider>
 
     </div>

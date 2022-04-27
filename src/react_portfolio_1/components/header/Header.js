@@ -128,6 +128,18 @@ const Header = (props) => {
           >
             Experience
           </Nav.Link>
+
+          <Nav.Link
+            as={NavLink}
+            to="/education"
+            className={
+              pathName == "/education" ? "header_link_active" : "header_link"
+            }
+            style = {headerlinkStyle}
+
+          >
+            Education
+          </Nav.Link>
         </Nav>
 
         <div className="header-right">

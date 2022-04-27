@@ -8,6 +8,7 @@ import Home from "./pages/home/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./reactPortfolio.css";
 import Fade from 'react-reveal/Fade';
+import Education from "./pages/education/education";
 
 
 
@@ -44,6 +45,9 @@ function ReactPortfolio(props) {
                     'overflow-y': 'scroll',
                   }}>
                   <Switch>
+                    <Route path="/education">
+                      <Education/>
+                    </Route>
                     <Route path="/workExperience">
                       <WorkExperience />
                     </Route>

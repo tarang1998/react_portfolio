@@ -1,21 +1,18 @@
-.workExperienceImageGrid {
-  /* margin-left: 30px !important; */
+.educationHeadingImage {
   margin-top: 50px !important;
-  align-items: center;
-  justify-content: center;
 }
 
-.workExperienceImageGrid > * {
+.educationHeadingImage > * {
   max-width: 100%;
   height: auto;
 }
 
-.workExperienceTextGrid {
+.educationHeadingText {
   text-align: start;
   margin-top: 40px !important;
 }
 
-.workExperienceTextGridHeadingText {
+.educationHeadingTextTitle {
   font-size: var(--titleSize);
   font-weight: 400;
   font-family: var(--font-google-sans-medium);
@@ -24,14 +21,14 @@
   margin-top: 80px;
 }
 
-.workExperienceTextGridSubHeadingText {
+.educationHeadingTextSubtitle {
   font-size: var(--subtitleSize);
   font-family: var(--font-google-sans-regular);
   text-align: center;
   margin-bottom: 10px;
 }
 
-.workExperienceTextGridDescription {
+.educationHeadingTextDescription {
   font-size: var(--textSize);
   line-height: 30px;
   margin-top: 0px;
@@ -41,34 +38,49 @@
   text-align: center;
 }
 
-.workExperienceTextGridDescriptionCompanyURL {
-  text-decoration: none;
+.educationDegreesDiv {
+  margin-top: 70px;
+}
+
+.educationDegreesDivHeader {
+  font-size: var(--subtitleSize);
+  line-height: 1.1;
+  font-family: var(--font-google-sans-regular);
+  text-align: center;
 }
 
 @media (max-width: 1380px) {
-  .workExperienceTextGridHeadingText {
+  .educationHeadingTextTitle {
     font-size: var(--titleSizeMaxWidth1380);
   }
 
-  .workExperienceTextGridSubHeadingText {
+  .educationHeadingTextSubtitle {
     font-size: var(--subtitleSizeMaxWidth1380);
   }
 
-  .workExperienceTextGridDescription {
+  .educationHeadingTextDescription {
     font-size: var(--textSizeMaxWidth1380);
+  }
+
+  .educationDegreesDivHeader {
+    font-size: var(--subtitleSizeMaxWidth1380);
   }
 }
 
 @media (max-width: 1110px) {
-  .workExperienceTextGridHeadingText {
+  .educationHeadingTextTitle {
     font-size: var(--titleSizeMaxWidth1100);
   }
 
-  .workExperienceTextGridSubHeadingText {
+  .educationHeadingTextSubtitle {
     font-size: var(--subtitleSizeSizeMaxWidth1100);
   }
 
-  .workExperienceTextGridDescription {
+  .educationHeadingTextDescription {
     font-size: var(--textSizeMaxWidth1100);
+  }
+
+  .educationDegreesDivHeader {
+    font-size: var(--subtitleSizeSizeMaxWidth1100);
   }
 }
