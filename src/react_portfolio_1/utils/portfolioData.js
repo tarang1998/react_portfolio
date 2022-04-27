@@ -1,4 +1,4 @@
-import { Facebook, LinkedIn, Twitter, GitHub } from "@material-ui/icons";
+import { Facebook, LinkedIn, Twitter, GitHub, Instagram } from "@material-ui/icons";
 
 const personalData = {
   name: "Tarang Nair",
@@ -34,6 +34,11 @@ const mediaLinks = {
       text: "tarang1998",
       icon: <GitHub />,
     },
+    Instagram : {
+      link : "https://www.instagram.com/nairtarang/",
+      text : "nairtarang",
+      icon : <Instagram/>,
+    }
   },
 };
 
