@@ -21,11 +21,13 @@ function ReactPortfolio(props) {
   return (
     <div style={{
       'background-color': theme.body_color,
-      'overflow':'auto'
+      'overflow':'auto',
     }}>
       <Container maxWidth="xl" className="top-20">
         <Grid container spacing={3}>
-          <Grid item xs={12} sm={12} md={12} lg={3} xl={3}>
+
+          <Grid item xs={12} sm={12} md={12} lg={3} xl={3} 
+         >
             <div>
               <Profile theme = {theme}/>
             </div>
@@ -41,8 +43,8 @@ function ReactPortfolio(props) {
                   style={{
                     'background-color': theme.body_color,
                     'border-color' : theme.contrast_color,
-                    'max-height' : '200px',
-                    'overflow-y': 'scroll',
+                    // 'max-height' : '200px',
+                    // 'overflow-y': 'scroll',
                   }}>
                   <Switch>
                     <Route path="/education">
