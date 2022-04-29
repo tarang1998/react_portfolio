@@ -13,9 +13,7 @@ function App() {
 
   useEffect(() => {
     if (settings.googleTrackingID) {
-      ReactGA.initialize(settings.googleTrackingID, {
-        testMode: process.env.NODE_ENV === "test",
-      });
+      ReactGA.initialize(settings.googleTrackingID,);
       ReactGA.pageview(window.location.pathname + window.location.search);
     }
   }, []);
