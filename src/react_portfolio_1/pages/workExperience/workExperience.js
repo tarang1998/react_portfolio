@@ -49,6 +49,7 @@ const WorkExperience = () => {
                                 {experience['currentCompanyName']}
                             </a>
                             <br/>
+                            <br/>
                             {experience["description1"]}
                         </p>
                     </Grid>

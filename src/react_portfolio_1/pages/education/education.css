@@ -47,7 +47,74 @@
   line-height: 1.1;
   font-family: var(--font-google-sans-regular);
   text-align: center;
+  margin-bottom: 50px;
 }
+
+/* .educationDegreesDivBody{} */
+
+.degreeCard {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+};
+
+.degreeCardImage {
+  height: "auto",
+
+}
+
+.degreeCardImage:hover{
+  color: "rgba(255, 255, 255, 1)" !important;
+} 
+
+.degreeCardBodyHeader{
+  max-width: inherit;
+  display: flex;
+  border-radius: 7px 7px 0px 0px;
+  padding: 10px;
+}
+
+.degreeCardBodyHeaderTitle {
+  align-items: flex-start;
+  width: 80%;
+}
+
+.degreeCardBodyHeaderCardTitle {
+  font-family: "Google Sans Medium";
+  font-size: 23px;
+  margin-left: 10px;
+}
+
+.degreeCardBodyHeaderCardSubTitle{
+  font-family: "Google Sans Medium";
+  font-size: 20px;
+  margin-top: 7px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.degreeCardBodyHeaderDuration {
+  width: 20%;
+}
+
+.duration {
+  font-family: "Google Sans Regular";
+  font-size: 16px;
+  padding-right: 10px;
+  float: right;
+}
+
+.degreeCardBodyContentLine {
+  font-size: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Google Sans Regular";
+}
+
+
+
 
 @media (max-width: 1380px) {
   .educationHeadingTextTitle {
@@ -84,3 +151,69 @@
     font-size: var(--subtitleSizeSizeMaxWidth1100);
   }
 }
+
+@media (max-width: 760px) {
+  .educationHeadingTextTitle {
+    font-size: var(--titleSizeMaxWidth760);
+  }
+
+  .educationHeadingTextSubtitle {
+    font-size: var(--subtitleSizeSizeMaxWidth760);
+  }
+
+  .educationHeadingTextDescription {
+    font-size: var(--textSizeMaxWidth760);
+  }
+
+  .educationDegreesDivHeader {
+    font-size: var(--subtitleSizeSizeMaxWidth760);
+  }
+
+  .degreeCard {
+    flex-direction: column;
+  }
+
+  .degreeCardImage{
+    width : 175px !important;
+    padding : 20px !important;
+    margin-bottom: 20px;
+    margin-right: 0px !important;
+  }
+
+  .degreeCardBodyHeader {
+    flex-direction: column;
+  }
+
+  .degreeCardBodyHeaderTitle {
+    width: 100%;
+  }
+
+  .degreeCardBodyHeaderCardTitle {
+    font-size: 20px;
+  }
+
+  .degreeCardBodyHeaderCardSubTitle{
+    font-size: 18px;
+  }
+
+  .degreeCardBodyHeaderDuration{
+    padding: 0;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 100%;
+
+  }
+
+  .duration {
+    padding: 0px;
+    margin: 0px;
+    float: left;
+  }
+
+  .degreeCardBodyContentLine {
+    font-size: 16px;
+  }
+
+  
+}
+

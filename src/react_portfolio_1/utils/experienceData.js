@@ -3,7 +3,7 @@ export const experience = {
     title : "Experience",
     subtitle : "Work and Internships",
 
-    description : `💼 I'm currently working as a Back End Engineer at `,
+    description : `💼 Currently working on developing XR learning experiences to provide an immersive and engaging way of learning at `,
     description1 : "💻 Open to work on freelancing Projects.",
 
     currentCompanyName : "Cerebranium.",
@@ -14,16 +14,16 @@ export const experience = {
           title: "Work Experience",
           experiences: [
             {
-              title: "Software Development Engineer 2",
+              title: "SDE 2 | Backend@Cerebranium",
               company: "Cerebranium",
               company_url: "https://www.myracle.io/",
-              logo_path: "cerebraniumLogo.png",
+              logo_path: "myracleLogo.webp",
               duration: "Nov 2020 - Present",
               description:[
 
                 {
                   icon:`⌨️`,
-                  text:`Currently working on developing learning experiences to provide an engaged way of learning using Unity3D.`
+                  text:`Currently working on developing XR learning experiences to provide an immersive and engaging way of learning`
                 },
                 {
                   icon:`📂`,
@@ -53,6 +53,10 @@ export const experience = {
                   icon:`📈`,
                   text:`Handled Error Monitoring.`
                 },
+                {
+                  icon:`✨`,
+                  text:`Skills Developed : Sentry | Firebase | TypeScript | Google Cloud Platform (GCP) | SQL`
+                }
                
                 
               ],
@@ -63,7 +67,7 @@ export const experience = {
           title: "Internships",
           experiences: [
             {
-              title: "Front End Engineer Intern",
+              title: "Mobile Engineer",
               company: "Cerebranium",
               company_url: "https://cerebranium.com/",
               logo_path: "cerebraniumLogo.png",
@@ -77,8 +81,15 @@ export const experience = {
                 {
                   icon:`🖥`,
                   text:` With the aim of digitising education the application is capable for conducting offline AI proctored assessments leveraging AI to reduce the burden on the supervisors.`
-                }
-                
+                },
+                {
+                  icon:`⚙️`,
+                  text:`Was introduced to software architecture concepts`
+                },          
+                {
+                  icon:`✨`,
+                  text:`Skills Developed : Git | Flutter | Mobile Application Development`
+                }       
               ],
             },
             {
