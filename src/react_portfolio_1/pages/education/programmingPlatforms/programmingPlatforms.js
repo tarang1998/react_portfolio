@@ -19,12 +19,16 @@ function ProgrammingPlatFroms(props) {
                 }
               >
                 <li className="programming-platforms-inline" name={programmingPlatform.platform}>
-                  <span
-                    className="iconify"
-                    data-icon={programmingPlatform.iconifyIconId}
-                    style={programmingPlatform.style}
-                    data-inline="false"
-                  ></span>
+                  <a href={programmingPlatform.link}
+                  target="_blank"
+                  rel="noopener noreferrer">
+                    <span
+                      className="iconify"
+                      data-icon={programmingPlatform.iconifyIconId}
+                      style={programmingPlatform.style}
+                      data-inline="false"
+                    ></span>
+                  </a>
                 </li>
               </OverlayTrigger>
             );
