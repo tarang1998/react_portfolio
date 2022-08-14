@@ -3,7 +3,7 @@ export const experience = {
     title : "Experience",
     subtitle : "Work and Internships",
 
-    description : `💼 Currently working on developing XR learning experiences to provide an immersive and engaging way of learning at `,
+    description : `💼 Currently looking out for new software development roles`,
     description1 : "💻 Open to work on freelancing Projects.",
 
     currentCompanyName : "Cerebranium.",
@@ -13,33 +13,35 @@ export const experience = {
         {
           title: "Work Experience",
           experiences: [
+      
             {
-              title: "SDE 2 | Backend@Cerebranium",
+              title: "SDE 2 | Backend Engineer",
               company: "Cerebranium",
               company_url: "https://www.myracle.io/",
               logo_path: "myracleLogo.webp",
-              duration: "Nov 2020 - Present",
+              duration: "May 2021 - Jul 2022",
               description:[
 
                 {
                   icon:`⌨️`,
-                  text:`Currently working on developing XR learning experiences to provide an immersive and engaging way of learning`
+                  text:`Developed, maintained and refactored API’s for the mobile applications in typescript following Clean Architecture
+                  principles and deployed them as Google cloud functions with proper documentation.`
                 },
                 {
                   icon:`📂`,
-                  text:`Designed database schema and data models to satisfy product requirements keeping forward compatibility in mind.`
+                  text:`Designed database schema (for both SQL, NoSQL) and data models to satisfy product requirements.`
                 },
                 {
                   icon:`🛢`,
-                  text:`Was responsible for migrating the database from a NoSQL database to a relational database.`
+                  text:`Was responsible for migrating the database from Cloud Firebase NoSQL database to Cloud Spanner (SQL)`
                 },
                 {
                   icon:`☁️`,
-                  text:`Developed and maintained API's for the mobile applications in typescript following Uncle Bob's Clean Architecture principles and deployed them as Google cloud functions.`
+                  text:`Setup sendgrid for email marketing and email notifications using sendgrid apis.`
                 },
                 {
                   icon:`📌`,
-                  text:`Designed firestore data models to satisfy product requirements keeping forward compatibility in mind.`
+                  text:`Performed analytics using Big Query.`
                 },
                 {
                   icon:`🖥️`,
@@ -47,18 +49,46 @@ export const experience = {
                 },
                 {
                   icon:`⚙️`,
-                  text:`Designed and maintained robust CI/CD pipelines to automate DevOps (for the mobile applications and cloud functions).`
+                  text:`Designed and maintained CI/CD pipelines using Github Actions to automate DevOps for the Android, iOS applications
+                  and cloud functions.`
                 },
                 {
                   icon:`📈`,
-                  text:`Handled Error Monitoring.`
+                  text:`Handled Error Monitoring in Sentry.`
+                },
+                {
+                  icon:`👨‍💼`,
+                  text:`Managed a 5-member (Backend, Frontend, Unity) team and coordinated with product owners toward the successful
+                  launch of the product`
                 },
                 {
                   icon:`✨`,
-                  text:`Skills Developed : Sentry | Firebase | TypeScript | Google Cloud Platform (GCP) | SQL`
+                  text:`Skills Developed : TypeScript | JavaScript | Error monitoring (Sentry) | Google Cloud Platform - ( Cloud Functions | Firebase | Cloud
+                  Spanner | BigQuery ) | Design Patterns | Clean Architecture | Documentation`
                 }
                
                 
+              ],
+            },
+            {
+              title: "SDE | Mobile Engineer",
+              company: "Cerebranium",
+              company_url: "https://cerebranium.com/",
+              logo_path: "cerebraniumLogo.png",
+              duration: "Nov 2020 - May 2021",
+              description:[
+                {
+                  icon:`📱`,
+                  text:`Built two scalable cross-platform mobile applications Promexa and Promexa Institution in Flutter from ground up which are currently live on the app store and play store.`,
+                },
+                {
+                  icon:`🖥`,
+                  text:` With the aim of digitising education the application is capable for conducting offline AI proctored assessments leveraging AI to reduce the burden on the supervisors.`
+                },
+                {
+                  icon:`✨`,
+                  text:`Skills Developed : Version Control (Git), Flutter, State management, Dependency injection`
+                }
               ],
             },
           ],
@@ -67,7 +97,7 @@ export const experience = {
           title: "Internships",
           experiences: [
             {
-              title: "Mobile Engineer",
+              title: "Front End Engineering Intern",
               company: "Cerebranium",
               company_url: "https://cerebranium.com/",
               logo_path: "cerebraniumLogo.png",
@@ -76,19 +106,16 @@ export const experience = {
                  
                 {
                   icon:`📱`,
-                  text:`Built two scalable cross-platform mobile applications Promexa and Promexa Institution in Flutter which are currently live on the app store and play store.`,
+                  text:`Built mobile applications in flutter`,
                 },
-                {
-                  icon:`🖥`,
-                  text:` With the aim of digitising education the application is capable for conducting offline AI proctored assessments leveraging AI to reduce the burden on the supervisors.`
-                },
+                
                 {
                   icon:`⚙️`,
-                  text:`Was introduced to software architecture concepts`
+                  text:`Was introduced to Software architecture concepts`
                 },          
                 {
                   icon:`✨`,
-                  text:`Skills Developed : Git | Flutter | Mobile Application Development`
+                  text:`Skills Developed : Git | Flutter `
                 }       
               ],
             },

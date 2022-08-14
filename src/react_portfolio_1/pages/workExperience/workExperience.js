@@ -45,9 +45,7 @@ const WorkExperience = () => {
                             style={{ color: currentTheme.contrast_color }}
                         >
                             {experience["description"]}
-                            <a className="workExperienceTextGridDescriptionCompanyURL" target="_blank" href={experience['currentCompanyWebsiteLink']}>
-                                {experience['currentCompanyName']}
-                            </a>
+                           
                             <br/>
                             <br/>
                             {experience["description1"]}

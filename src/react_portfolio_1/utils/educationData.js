@@ -4,6 +4,7 @@ export const education = {
     subtitle : "Qualifications and Certificates",
 
     description : `🤓 A Computer Engineer exploring the tech space `,
+    description1 : `👨‍💻 Competitive programming Enthusiast`,
 
     degrees:[
         {
@@ -19,7 +20,41 @@ export const education = {
             ],
             website_link: "https://vit.edu.in/",
         }
-    ]
+    ],
+
+    competitiveProgrammingPlatforms: [
+        {
+          platform: "LeetCode",
+          iconifyIconId: "simple-icons:leetcode",
+          style: {
+            color: "#f3b548",
+          },
+        },
+        {
+          platform: "Hackerrank",
+          iconifyIconId: "simple-icons:hackerrank",
+          style: {
+            color: "#49b463",
+          },
+        },
+        {
+            platform: "Codechef",
+            iconifyIconId: "simple-icons:codechef",
+            style: {
+              color: "#e0e0df",
+            },
+        },
+       
+        {
+            platform: "GFG",
+            iconifyIconId: "simple-icons:geeksforgeeks",
+            style: {
+              color: "#157d2f",
+            },
+          },
+       
+       
+      ],
 
 }
 

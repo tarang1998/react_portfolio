@@ -100,7 +100,7 @@ function SkillSection() {
               // </div>
 
               <Grid container xs={12} style={{
-                'margin-top': '0px',
+                'margin-top': '5px',
               }}>
 
                 <Grid item xs={12} md={6} 
@@ -155,7 +155,7 @@ function SkillSection() {
             return (
 
               <Grid container xs={12} style={{
-                'margin-top': '0px',
+                'margin-top': '5px',
               }}>
 
                 <Grid item xs={12}  md={6}  className='skills-section-text-div' >

@@ -2,7 +2,7 @@ import { Facebook, LinkedIn, Twitter, GitHub, Instagram } from "@material-ui/ico
 
 const personalData = {
   name: "Tarang Nair",
-  title: "Software Engineer",
+  title: "Software Developer",
   birthday: "29th June 1998",
   contact: "9769712443",
   email: "tarangnair98@gmail.com",
@@ -44,7 +44,7 @@ const mediaLinks = {
 
 const introduction = {
   aboutMe:
-    "A Software developer with experience in building production grade applications with excellent research and debugging skills. I love to take up hard challenges, collaborate with people, automate things and solve real world problems.",
+    "A Software developer experienced in building scalable applications passionate about backend and mobile engineering. I love to take up hard challenges, collaborate with people, automate things and solve real world problems.",
 };
 
 

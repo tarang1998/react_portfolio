@@ -8,6 +8,7 @@ import { ThemeContext } from 'styled-components'
 import { education } from "../../utils/educationData";
 import Fade from 'react-reveal/Fade';
 import { Flip } from "react-reveal";
+import ProgrammingPlatFroms from "./programmingPlatforms/programmingPlatforms";
 
 
 
@@ -41,6 +42,17 @@ const Education = () => {
 
             <div className="educationHeadingTextDescription">
               {education['description']}
+              <br/>
+              {education["description1"]}
+            </div>
+
+            <Fade  duration={1500}>
+              <ProgrammingPlatFroms programmingPlatforms={education.competitiveProgrammingPlatforms} />
+            </Fade>
+
+
+            <div>
+              
             </div>
 
           </Grid>

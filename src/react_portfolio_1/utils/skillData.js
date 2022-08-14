@@ -4,7 +4,7 @@ export const skills = {
         title: "Mobile App Development",
         fileName: "MobileDevelopmentImg",
         skills: [
-          "⚡ Experienced in developing scalable cross-platform mobile applications using Flutter.",
+          "⚡ Experienced in developing scalable cross-platform mobile applications in Flutter.",
   
         ],
         softwareSkills: [
@@ -27,10 +27,77 @@ export const skills = {
   
       },
       {
+        title: "Cloud Infra-Architecture",
+        fileName: "CloudInfraImg",
+        skills: [
+          "⚡ Experience working with Google Cloud Platform",
+
+        ],
+        softwareSkills: [
+          // {
+          //   skillName: "AWS",
+          //   iconifyIconId: "simple-icons:amazonaws",
+          //   style: {
+          //     color: "#FF9900",
+          //   },
+          // },
+          // {
+          //   skillName: "Netlify",
+          //   iconifyIconId: "simple-icons:netlify",
+          //   style: {
+          //     color: "#38AFBB",
+          //   },
+          // },
+          // {
+          //   skillName: "Heroku",
+          //   iconifyIconId: "simple-icons:heroku",
+          //   style: {
+          //     color: "#6863A6",
+          //   },
+          // },
+          {
+            skillName: "Firebase",
+            iconifyIconId: "simple-icons:firebase",
+            style: {
+              color: "#FFCA28",
+            },
+          },
+          // {
+          //   skillName: "PostgreSQL",
+          //   iconifyIconId: "simple-icons:postgresql",
+          //   style: {
+          //     color: "#336791",
+          //   },
+          // },
+          // {
+          //   skillName: "MongoDB",
+          //   iconifyIconId: "simple-icons:mongodb",
+          //   style: {
+          //     color: "#47A248",
+          //   },
+          // },
+          {
+            skillName: "Docker",
+            iconifyIconId: "simple-icons:docker",
+            style: {
+              color: "#1488C6",
+            },
+          },
+          {
+            skillName: "GitHub Actions",
+            iconifyIconId: "simple-icons:githubactions",
+            style: {
+              color: "#5b77ef",
+            },
+          },
+        ],
+      },
+      
+      {
         title: "Web App Development",
         fileName: "FullStackImg",
         skills: [
-          "⚡ Experienced in developing Web Applications using the React library"
+          "⚡ Experienced in developing Web Applications"
         ],
         softwareSkills: [
           {
@@ -129,76 +196,12 @@ export const skills = {
       
         ],
       },
-      {
-        title: "Cloud Infra-Architecture",
-        fileName: "CloudInfraImg",
-        skills: [
-          "⚡ Experience working with google cloud platform",
-        ],
-        softwareSkills: [
-          // {
-          //   skillName: "AWS",
-          //   iconifyIconId: "simple-icons:amazonaws",
-          //   style: {
-          //     color: "#FF9900",
-          //   },
-          // },
-          // {
-          //   skillName: "Netlify",
-          //   iconifyIconId: "simple-icons:netlify",
-          //   style: {
-          //     color: "#38AFBB",
-          //   },
-          // },
-          // {
-          //   skillName: "Heroku",
-          //   iconifyIconId: "simple-icons:heroku",
-          //   style: {
-          //     color: "#6863A6",
-          //   },
-          // },
-          {
-            skillName: "Firebase",
-            iconifyIconId: "simple-icons:firebase",
-            style: {
-              color: "#FFCA28",
-            },
-          },
-          // {
-          //   skillName: "PostgreSQL",
-          //   iconifyIconId: "simple-icons:postgresql",
-          //   style: {
-          //     color: "#336791",
-          //   },
-          // },
-          // {
-          //   skillName: "MongoDB",
-          //   iconifyIconId: "simple-icons:mongodb",
-          //   style: {
-          //     color: "#47A248",
-          //   },
-          // },
-          {
-            skillName: "Docker",
-            iconifyIconId: "simple-icons:docker",
-            style: {
-              color: "#1488C6",
-            },
-          },
-          {
-            skillName: "GitHub Actions",
-            iconifyIconId: "simple-icons:githubactions",
-            style: {
-              color: "#5b77ef",
-            },
-          },
-        ],
-      },
+      
       {
         title: "Software Development",
         fileName: "SoftwareDevelopmentImg",
         skills: [
-          // "⚡ Experience working with google cloud platform",
+           "⚡ Proficient in languages : Python , Java, C++, C",
         ],
         softwareSkills: [
           {
