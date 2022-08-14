@@ -1,2 +1,7 @@
-# react_portfolio
-A Demo React Portfolio Web app
+# Tarangs Portfolio
+
+- Currently hosted at [tarangnair.com](https://tarangnair.com/)
+
+## References
+
+- [saadpasta/developerFolio](https://github.com/saadpasta/developerFolio)

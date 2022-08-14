@@ -47,6 +47,7 @@ function ReactPortfolio(props) {
                     // 'overflow-y': 'scroll',
                   }}>
                   <Switch>
+                    <Route path = "/education"></Route>
                     <Route path="/education">
                       <Education/>
                     </Route>
