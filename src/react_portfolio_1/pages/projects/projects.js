@@ -21,9 +21,10 @@ const Projects = () => {
 
   const styles = style({
     'color':currentTheme.contrast_color,
-    backgroundColor: `${currentTheme.accentBright}`,
+    // backgroundColor: `${currentTheme.accentColor}`,
+
     ":hover": {
-      boxShadow: `0 5px 15px ${currentTheme.accentBright}`,
+      boxShadow: `0 5px 15px ${currentTheme.accentColor}`,
     },
   });
 
