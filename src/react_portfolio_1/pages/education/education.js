@@ -24,6 +24,8 @@ const Education = () => {
         'color':currentTheme.contrast_color
       }} >
 
+      <Fade  duration={4000}>
+
         <Grid container className="educationHeading">
 
           <Grid item xs={12} md={5} className="educationHeadingImage">
@@ -46,18 +48,15 @@ const Education = () => {
               {education["description1"]}
             </div>
 
-            <Fade  duration={1500}>
-              <ProgrammingPlatFroms programmingPlatforms={education.competitiveProgrammingPlatforms} />
-            </Fade>
+            <ProgrammingPlatFroms programmingPlatforms={education.competitiveProgrammingPlatforms} />
 
-
-            <div>
-              
-            </div>
 
           </Grid>
 
         </Grid> 
+
+      </Fade>
+
 
         <div className="educationDegreesDiv">
 

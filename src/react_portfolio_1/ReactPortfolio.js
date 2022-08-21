@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./reactPortfolio.css";
 import Fade from 'react-reveal/Fade';
 import Education from "./pages/education/education";
+import Projects from "./pages/projects/projects";
 
 
 
@@ -26,8 +27,7 @@ function ReactPortfolio(props) {
       <Container maxWidth="xl" className="top-20">
         <Grid container spacing={3}>
 
-          <Grid item xs={12} sm={12} md={12} lg={3} xl={3} 
-         >
+          <Grid item xs={12} sm={12} md={12} lg={3} xl={3}>
             <div>
               <Profile theme = {theme}/>
             </div>
@@ -47,7 +47,9 @@ function ReactPortfolio(props) {
                     // 'overflow-y': 'scroll',
                   }}>
                   <Switch>
-                    <Route path = "/education"></Route>
+                    <Route path = "/projects">
+                      <Projects/>  
+                    </Route>
                     <Route path="/education">
                       <Education/>
                     </Route>

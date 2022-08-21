@@ -22,6 +22,7 @@ export const skills = {
               color: "#29B0EE",
             },
           },
+        
           
         ]
   
@@ -62,6 +63,10 @@ export const skills = {
               color: "#FFCA28",
             },
           },
+          {
+            skillName: "Google Cloud Platforms",
+            iconifyIconId: "logos:google-cloud",
+          },
           // {
           //   skillName: "PostgreSQL",
           //   iconifyIconId: "simple-icons:postgresql",
@@ -76,13 +81,13 @@ export const skills = {
           //     color: "#47A248",
           //   },
           // },
-          {
-            skillName: "Docker",
-            iconifyIconId: "simple-icons:docker",
-            style: {
-              color: "#1488C6",
-            },
-          },
+          // {
+          //   skillName: "Docker",
+          //   iconifyIconId: "simple-icons:docker",
+          //   style: {
+          //     color: "#1488C6",
+          //   },
+          // },
           {
             skillName: "GitHub Actions",
             iconifyIconId: "simple-icons:githubactions",

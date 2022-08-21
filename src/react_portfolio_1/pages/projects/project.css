@@ -1,0 +1,125 @@
+
+.projectHeadingImage {
+  margin-top: 50px !important;
+}
+
+.projectHeadingImage > * {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.projectHeadingText {
+  text-align: start;
+  margin-top: 40px !important;
+}
+
+.projectHeadingTextTitle {
+  font-size: var(--titleSize);
+  font-weight: 400;
+  font-family: var(--font-google-sans-medium);
+  line-height: 1.1;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.projectHeadingTextSubtitle {
+  font-size: var(--subtitleSize);
+  font-family: var(--font-google-sans-regular);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.projectHeadingTextDescription {
+  font-size: var(--textSize);
+  line-height: 30px;
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: var(--font-google-sans-medium);
+  text-align: center;
+}
+
+.repo-cards-div-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1rem 1rem;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 60px;
+}
+
+.general-btn {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  padding: 15px 15px;
+  margin-top: 25px;
+  border-radius: 4px;
+  border-width: 0px;
+  width: 200px;
+  height: 50px;
+  font-weight: bold;
+  font-family: "Google Sans Regular";
+  font-size: 17px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+
+
+
+
+@media (max-width: 1380px) {
+  .projectHeadingTextTitle {
+    font-size: var(--titleSizeMaxWidth1380);
+  }
+
+  .projectHeadingTextSubtitle {
+    font-size: var(--subtitleSizeMaxWidth1380);
+  }
+
+  .projectHeadingTextDescription {
+    font-size: var(--textSizeMaxWidth1380);
+  }
+
+}
+
+@media (max-width: 1110px) {
+  .projectHeadingTextTitle {
+    font-size: var(--titleSizeMaxWidth1100);
+  }
+
+  .projectHeadingTextSubtitle {
+    font-size: var(--subtitleSizeSizeMaxWidth1100);
+  }
+
+  .projectHeadingTextDescription {
+    font-size: var(--textSizeMaxWidth1100);
+  }
+
+}
+
+@media (max-width: 760px) {
+  .projectHeadingTextTitle {
+    font-size: var(--titleSizeMaxWidth760);
+  }
+
+  .projectHeadingTextSubtitle {
+    font-size: var(--subtitleSizeSizeMaxWidth760);
+  }
+
+  .projectHeadingTextDescription {
+    font-size: var(--textSizeMaxWidth760);
+  }
+
+  .repo-cards-div-main {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+  }
+
+ 
+
+}
+
