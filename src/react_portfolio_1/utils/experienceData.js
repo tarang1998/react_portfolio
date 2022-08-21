@@ -29,7 +29,7 @@ export const experience = {
                 },
                 {
                   icon:`📂`,
-                  text:`Designed database schema (for both SQL, NoSQL) and data models to satisfy product requirements.`
+                  text:`Designed database schema and data models to satisfy product requirements.`
                 },
                 {
                   icon:`🛢`,
