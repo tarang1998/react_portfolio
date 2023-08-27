@@ -22,18 +22,18 @@ function ReactPortfolio(props) {
   return (
     <div style={{
       'background-color': theme.body_color,
-      'overflow':'auto',
+      // 'overflow':'auto',
     }}>
       <Container maxWidth="xl" className="top-20">
         <Grid container spacing={3}>
 
-          <Grid item xs={12} sm={12} md={12} lg={3} xl={3}>
+          {/* <Grid item xs={12} sm={12} md={12} lg={3} xl={3}>
             <div>
               <Profile theme = {theme}/>
             </div>
-          </Grid>
+          </Grid> */}
 
-          <Grid item xs={12} sm={12} md={12} lg={9} xl={9}>
+          <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
             <Router>
               
               <Header theme={theme} setTheme={setTheme}/>

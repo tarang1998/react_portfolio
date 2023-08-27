@@ -4,7 +4,9 @@ export const skills = {
         title: "Mobile App Development",
         fileName: "MobileDevelopmentImg",
         skills: [
-          "⚡ Experienced in developing scalable cross-platform mobile applications in Flutter.",
+          "⚡ Experienced in developing scalable cross-platform mobile applications in Flutter and React-Native.",
+          "⚡ Build multiple mobile applications from ground up and deployed them in App Store and Play Store that are being collectively used by 10,000+ users.",
+
   
         ],
         softwareSkills: [
@@ -28,10 +30,13 @@ export const skills = {
   
       },
       {
-        title: "Cloud Infra-Architecture",
+        title: "Cloud Computing Platforms",
         fileName: "CloudInfraImg",
         skills: [
-          "⚡ Experience working with Google Cloud Platform",
+          "⚡ Experience working with Google Cloud Platform for handling the backend services required for the application.",
+          "⚡ Desiged several API's in typescript in a Node JS environment following clean architecture principles and deployed them as Cloud Functions leveraging GCP's serverless services",
+          "⚡ Worked with several other services provided by GCP like Firebase(NoSQL), Cloud Spanner(SQL), Cloud Task, Cloud Domains, Big Query, Load Balancers, Google managed certificates, VM Instances",
+
 
         ],
         softwareSkills: [
@@ -102,7 +107,7 @@ export const skills = {
         title: "Web App Development",
         fileName: "FullStackImg",
         skills: [
-          "⚡ Experienced in developing Web Applications"
+          "⚡ Experienced in developing Web Applications using React"
         ],
         softwareSkills: [
           {

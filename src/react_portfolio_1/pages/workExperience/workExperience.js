@@ -47,7 +47,6 @@ const WorkExperience = () => {
                             {experience["description"]}
                            
                             <br/>
-                            <br/>
                             {experience["description1"]}
                         </p>
                     </Grid>

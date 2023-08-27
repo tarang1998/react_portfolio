@@ -28,6 +28,8 @@ const Home = () => {
       </Grid> */}
 
       <Greetings/>
+      
+
 
       <Skills/>
 

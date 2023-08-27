@@ -1,5 +1,5 @@
 .skills-header-div {
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .skills-header {
@@ -29,6 +29,7 @@
   margin-left: 50px;
   margin-top: 3%;
   padding-top: 80px;
+  /* font-size: large; */
   font-family: var(--font-google-sans-regular);
 }
 

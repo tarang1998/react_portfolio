@@ -6,11 +6,72 @@ const personalData = {
   birthday: "29th June 1998",
   contact: "9769712443",
   email: "tarangnair98@gmail.com",
+  resumeLink: "https://docs.google.com/document/d/1QtyjngTwQ5PEsfYrUKfHmWvTbBHUL_Qfl5Kp8IDn2BA/edit?usp=sharing"
 };
 
 const greetingData = {
   title : 'Hello👋'
 }
+
+
+const contactPlatforms = [
+  {
+    platform: "Github",
+    link : "https://github.com/tarang1998",
+    iconifyIconId: "skill-icons:github-light",
+    
+  },
+  {
+    platform: "Linkedin",
+    link : "https://www.linkedin.com/in/tarang-nair-752aa8179/",
+    iconifyIconId: "skill-icons:linkedin",
+    // style: {
+    //   color: "#49b463",
+    // },
+  },
+  {
+      platform: "Instagram",
+      link : "https://www.instagram.com/nairtarang/",
+      iconifyIconId: "skill-icons:instagram",
+      // style: {
+      //   color: "#9ea39f",
+      // },
+  },
+  {
+      platform: "Facebook",
+      link : "https://www.facebook.com/tarangnair",
+      iconifyIconId: "devicon:facebook",
+      // style: {
+      //   color: "#00000",
+      // },
+    },
+    {
+      platform: "Twitter",
+      link : 'https://twitter.com/tarang90564113',
+      iconifyIconId: "skill-icons:twitter",
+      // style: {
+      //   color: "#00000",
+      // },
+    },
+    {
+      platform: "GitLab",
+      link : 'https://gitlab.com/tarangnair98',
+      iconifyIconId: "skill-icons:gitlab-dark",
+      // style: {
+      //   color: "#00000",
+      // },
+    },
+    {
+      platform: "Gmail",
+      link : 'mailto:tarangnair98@gmail.com',
+      iconifyIconId: "logos:google-gmail",
+      // style: {
+      //   color: "#00000",
+      // },
+    },
+ 
+];
+
 
 const mediaLinks = {
   socials: {
@@ -44,9 +105,9 @@ const mediaLinks = {
 
 const introduction = {
   aboutMe:
-    "A Software developer experienced in building scalable applications passionate about backend and mobile engineering. I love to take up hard challenges, collaborate with people, automate things and solve real world problems.",
+    "A graduate student pursuing my Masters in Software Engineering from University Of Maryland, College Park and a software developer experienced in building scalable applications. I love to take up hard challenges, collaborate with people, automate things and solve real world problems. Feel free to connect !",
 };
 
 
 
-export { personalData, greetingData, mediaLinks, introduction };
+export { personalData, greetingData, mediaLinks, introduction, contactPlatforms };

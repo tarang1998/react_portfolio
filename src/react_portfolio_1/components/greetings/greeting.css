@@ -1,9 +1,28 @@
-/* .greeting-text-grid {
+
+
+.greeting-text-grid-div{
+
+  /* display: inline; */
+  margin-left: 50px !important;
+  /* align-items: left;
+  justify-content: left; */
+}
+
+
+/* 
+.greeting-text-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 } */
+
+.contact-platforms{
+  margin-left: 0px;
+}
 
 .greeting-title {
   margin-top: 130px;
-  margin-left: 50px;
+  /* margin-left: 50px; */
   font-size: var(--titleSize);
   line-height: 6px;
   font-family: var(--font-google-sans-bold);
@@ -12,13 +31,13 @@
 .greeting-sub-title {
   font-size: var(--subtitleSize);
   line-height: 40px;
-  margin-left: 50px;
+  /* margin-left: 50px; */
   margin-top: 30px;
   font-family: var(--font-google-sans-medium);
 }
 
 .greeting-p {
-  margin-left: 50px;
+  /* margin-left: 50px; */
   font-size: var(--textSize);
 }
 
