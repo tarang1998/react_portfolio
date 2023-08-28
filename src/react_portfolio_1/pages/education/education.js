@@ -48,7 +48,7 @@ const Education = () => {
               {education["description1"]}
             </div>
 
-            <ProgrammingPlatFroms programmingPlatforms={education.competitiveProgrammingPlatforms} />
+            {/* <ProgrammingPlatFroms programmingPlatforms={education.competitiveProgrammingPlatforms} /> */}
 
 
           </Grid>

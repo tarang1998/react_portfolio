@@ -3,19 +3,31 @@ export const education = {
     title : "Education",
     subtitle : "Qualifications and Certificates",
 
-    description : `🤓 A Computer Engineer exploring the tech space `,
-    description1 : `👨‍💻 Competitive programming Enthusiast`,
+    description : `🤓 Masters Of Software Engineering graduate student for Fall 2023 `,
+    description1 : `📜 Completed my Bachelors in Computer Engineering in 2020 from Mumbai University`,
 
     degrees:[
         {
-            title: "Vidyalankar Institute Of Technology",
-            subtitle: "Bachelor in Computer Science",
+          title: "University Of Maryland, College Park",
+          subtitle: "Masters Of Engineering in Software Engineering",
+          logo_path: "UMCP.svg",
+          alt_name: "UMCP",
+          duration: "2023 - 2025",
+          descriptions: [
+            "⚡ Masters Of Software Engineering graduate student of the Fall 2023 Batch",
+          
+          ],
+          website_link: "https://umd.edu/",
+      },
+        {
+            title: "Vidyalankar Institute Of Technology, Mumbai University",
+            subtitle: "Bachelor of Engineering in Computer Science",
             logo_path: "VIT.png",
             alt_name: "VIT",
             duration: "2016 - 2020",
             descriptions: [
-              "⚡ Relevant Courses : Operating System, Database Management, Computer Networks, Data Structures And Algorithms, C Programming.",
-              "⚡ Created a AR mobile application in Unity 3D to display 3D models on scanning the food items in the menu as the final year project aimed at enhancing the user experience for the restaurant customers"
+              "⚡ Relevant Courses : Structured Programming Languages(C), Object Oriented Programming(Java), Operating System, Database Management, Computer Networks, Data Structures And Algorithms, Web Designing, Software Engineering, Machine Learning, Data Warehousing and Mining, Big Data and Analytics, Artificial Intelligence, NLP, Distributed Computing, Cloud Computing.",
+              "⚡ Created a AR mobile application in Unity 3D as my final year project to display 3D models of food items on scanning the items in the menu which could be customized based on the user needs aimed to enhance the user experience at restaurants"
              
             ],
             website_link: "https://vit.edu.in/",
