@@ -71,6 +71,41 @@ export const education = {
        
       ],
 
+     
+      certifications: [
+          {
+            title: "Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning",
+            subtitle: "DeepLearning.AI",
+            logo_path: "deepLearningAI.png",
+            certificate_link:
+              "https://www.coursera.org/account/accomplishments/certificate/ZS3BTZBCFWJG",
+            alt_name: "",
+            color_code: "#eef1ee",
+          },
+          {
+            title: "Convolutional Neural Networks in TensorFlow",
+            subtitle: "DeepLearning.AI",
+            logo_path: "deepLearningAI.png",
+            certificate_link:
+              "https://www.coursera.org/account/accomplishments/certificate/TBPNWJND3MHG",
+            alt_name: "",
+            color_code: "#eef1ee",
+          },
+          {
+            title: "Natural Language Processing in TensorFlow",
+            subtitle: "DeepLearning.AI",
+            logo_path: "deepLearningAI.png",
+            certificate_link:
+              "https://www.coursera.org/account/accomplishments/certificate/Q6DZXW3YM33N",
+            alt_name: "",
+            color_code: "#eef1ee",
+          },
+          
+      
+        ],
+      
+      
+
 }
 
 

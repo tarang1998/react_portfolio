@@ -8,7 +8,8 @@ import { ThemeContext } from 'styled-components'
 import { education } from "../../utils/educationData";
 import Fade from 'react-reveal/Fade';
 import { Flip } from "react-reveal";
-import ProgrammingPlatFroms from "./programmingPlatforms/programmingPlatforms";
+// import ProgrammingPlatFroms from "./programmingPlatforms/programmingPlatforms";
+import Certifications from "./certifications/Certifications";
 
 
 
@@ -216,6 +217,9 @@ const Education = () => {
             })}
 
           </div>
+
+          <Certifications theme={currentTheme} certifications={education['certifications']} />
+
 
 
         </div>

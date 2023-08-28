@@ -11,7 +11,7 @@ export const projectData = {
       name: "Kirana Fast, Ease My Store",
       subtitle: "Inventory Management and Billing Application",
       url: "https://play.google.com/store/apps/details?id=com.apnidukan.my_app",
-      description: "Developed mobile and web applications using Flutter and GCP aimed to be the all-in-one inventory management and billing app having the largest FMCG database with over 2 million+ products used by 1000+ retail shops across India thereby increasing their productivity and revenue.",
+      description: "Developed mobile and web applications using Flutter and GCP aimed to be the all-in-one inventory management and billing app having the largest FMCG database with over 2 million+ products.",
       languages: [
         {
           name: "Flutter",
