@@ -5,6 +5,44 @@ export const projectData = {
 
   description: `💻 Projects and applications developed and maintained by me throughout my career using a variety of the latest technology tools like Flutter, Google Cloud Platforms, NodeJS and programming languages like Python, Dart, TypeScript, JavaScript, HTML, CSS`,
 
+  platforms: {
+    "GITHUB": {
+      name: 'Github',
+      iconifyClass: "simple-icons:github",
+      style: {
+        color: "#808080"
+      }
+    },
+
+    "WEB": {
+      name: 'Web',
+      iconifyClass: "streamline:web-solid",
+      style: {
+        color: "#CCCCF"
+      }
+    },
+
+    "APPSTORE": {
+      name: 'AppStore',
+      iconifyClass: "ion:logo-apple-appstore",
+      style: {
+        color: "#0096FF"
+      }
+    },
+
+    "PLAYSTORE": {
+      name: "PlayStore",
+      iconifyClass: "ion:logo-google-playstore",
+      style: {
+        color: "#ffffff"
+
+      }
+    }
+
+
+
+  },
+
   techStacks: {
     'FLUTTER': {
       name: "Flutter",

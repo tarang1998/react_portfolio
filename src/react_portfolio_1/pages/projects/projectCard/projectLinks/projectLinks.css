@@ -1,0 +1,47 @@
+.tech-platforms-main-div {
+    display: block;
+    justify-content: flex-start;
+}
+
+.dev-icons-platforms {
+    padding-left: 0;
+    list-style: none;
+    font-size: 2rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: right;
+}
+
+.dev-icons-platforms li {
+    float: left;
+}
+
+.tech-platforms-inline-platform {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    font-family: "Google Sans Regular";
+}
+
+
+
+#tooltip-top>.tooltip-inner {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #062e56;
+    border-radius: 5px;
+    padding: 2.5px;
+    margin-bottom: 2px;
+}
+
+#tooltip-top>.tooltip-arrow {
+    border-top: 5px solid #062e56;
+}
+
+@media (max-width: 768px) {
+    
+    .tech-platforms-inline-platform {
+        margin-right: 10px;
+        margin-bottom: 0px;
+    }
+}

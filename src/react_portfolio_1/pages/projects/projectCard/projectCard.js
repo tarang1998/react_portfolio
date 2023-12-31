@@ -4,12 +4,13 @@ import { style } from "glamor";
 import "./projectCard.css"
 import ProjectLanguages from "./projectLanguages/projectLanguages";
 import { Grid } from "@material-ui/core";
+import ProjectLinks from "./projectLinks/projectLinks";
 
 export default function ProjectCard({ repo, theme }) {
-  function openRepoinNewTab(url) {
-    var win = window.open(url, "_blank");
-    win.focus();
-  }
+  // function openRepoinNewTab(url) {
+  //   var win = window.open(url, "_blank");
+  //   win.focus();
+  // }
 
   const styles = style({
     color: "rgb(88, 96, 105)",
@@ -31,7 +32,7 @@ export default function ProjectCard({ repo, theme }) {
         <div
           {...styles}
           key={repo.id}
-          onClick={() => openRepoinNewTab(repo.url)}
+          // onClick={() => openRepoinNewTab(repo.url)}
           style={{ backgroundColor: theme.projectCard }}
         >
           <div className="repo-name-div">
@@ -50,11 +51,12 @@ export default function ProjectCard({ repo, theme }) {
           <br />
 
           <div className="repo-details">
-            <Grid container spacing={2}>
-              <Grid item xs={6}>
+            <Grid container>
+              <Grid item sm={6} xs={12}>
                 <ProjectLanguages techStack={repo.techStack} />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item sm={6} xs={12}>
+                <ProjectLinks urls={repo.urls??[]} />
               </Grid>
             </Grid>
           </div>
