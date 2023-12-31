@@ -10,6 +10,7 @@ import "./reactPortfolio.css";
 import Fade from 'react-reveal/Fade';
 import Education from "./pages/education/education";
 import Projects from "./pages/projects/projects";
+import Programming from "./pages/promgramming/programming";
 
 
 
@@ -24,7 +25,7 @@ function ReactPortfolio(props) {
       'background-color': theme.body_color,
       // 'overflow':'auto',
     }}>
-      <Container maxWidth="xl" className="top-20">
+      <Container maxWidth="xl">
         <Grid container spacing={3}>
 
           {/* <Grid item xs={12} sm={12} md={12} lg={3} xl={3}>
@@ -47,6 +48,9 @@ function ReactPortfolio(props) {
                     // 'overflow-y': 'scroll',
                   }}>
                   <Switch>
+                    <Route path="/programming">
+                      <Programming/>
+                    </Route>
                     <Route path = "/projects">
                       <Projects/>  
                     </Route>

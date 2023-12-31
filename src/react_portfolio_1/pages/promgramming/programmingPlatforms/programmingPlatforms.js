@@ -3,11 +3,12 @@ import "./programmingPlatforms.css";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 
-function ProgrammingPlatFroms(props) {
+function ProgrammingPlatForms(props) {
   return (
       <div className="programming-platforms-div">
         <ul className="dev-icons">
           {props.programmingPlatforms.map((programmingPlatform) => {
+            console.log(programmingPlatform)
             return (
               <OverlayTrigger
                 key={programmingPlatform.platform}
@@ -38,4 +39,4 @@ function ProgrammingPlatFroms(props) {
   );
 }
 
-export default ProgrammingPlatFroms;
+export default ProgrammingPlatForms;

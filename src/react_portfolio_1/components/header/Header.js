@@ -80,7 +80,8 @@ const Header = (props) => {
     className="header container_shadow" 
     expand="lg"
     style = {{
-      'border-color': props.theme.contrast_color
+      'border-color': props.theme.contrast_color,
+      'margin-top': 20,
     }}
     >
       {/* Home */}
@@ -150,6 +151,17 @@ const Header = (props) => {
             style = {headerlinkStyle}
           >
             Projects
+          </Nav.Link>
+
+          <Nav.Link
+            as={NavLink}
+            to="/programming"
+            className={
+              pathName == "/programming" ? "header_link_active" : "header_link"
+            }
+            style = {headerlinkStyle}
+          >
+            Programming
           </Nav.Link>
         </Nav>
 

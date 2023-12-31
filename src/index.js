@@ -15,7 +15,7 @@ ReactDOM.render(
   <StyletronProvider value={engine}>
 		<BaseProvider theme={LightTheme}>
       <React.StrictMode>
-        <App/>
+        <App/> 
       </React.StrictMode>
 	</BaseProvider>
 	</StyletronProvider>,

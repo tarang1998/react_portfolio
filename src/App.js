@@ -26,7 +26,7 @@ function App() {
   })
   
   return (
-      <div >
+      <div className="app">
         <ThemeProvider theme={themes[selectedTheme]}>
           <ReactPortfolio 
             theme={themes[selectedTheme]} 
