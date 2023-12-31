@@ -1,31 +1,32 @@
 import React from "react";
 import "./projectLanguages.css";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
+import { projectData } from "../../../../utils/projectData";
 
 function ProjectLanguages(props) {
   return (
     <div>
       <div className="software-skills-main-div">
         <ul className="dev-icons-languages">
-          {props.logos.map((logo) => {
+          {props.techStack.map((tech) => {
             return (
               <OverlayTrigger
-                key={logo.name}
+                key={projectData["techStacks"][tech].name}
                 placement={"top"}
                 overlay={
                   <Tooltip id={`tooltip-top`}>
-                    <strong>{logo.name}</strong>
+                    <strong>{projectData["techStacks"][tech].name}</strong>
                   </Tooltip>
                 }
               >
                 <li
                   className="software-skill-inline-languages"
-                  name={logo.skillName}
+                  name={projectData["techStacks"][tech].name}
                 >
                   <span
                     className="iconify"
-                    data-icon={logo.iconifyClass}
-                    style={logo.style}
+                    data-icon={projectData["techStacks"][tech].iconifyClass}
+                    style={projectData["techStacks"][tech].style}
                     data-inline="false"
                   ></span>
                 </li>

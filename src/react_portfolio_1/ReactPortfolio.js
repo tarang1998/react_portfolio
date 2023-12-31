@@ -52,7 +52,7 @@ function ReactPortfolio(props) {
                       <Programming/>
                     </Route>
                     <Route path = "/projects">
-                      <Projects/>  
+                      <Projects theme = {theme}/>  
                     </Route>
                     <Route path="/education">
                       <Education/>

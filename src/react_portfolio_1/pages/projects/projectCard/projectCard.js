@@ -3,6 +3,7 @@ import { Fade } from "react-reveal";
 import { style } from "glamor";
 import "./projectCard.css"
 import ProjectLanguages from "./projectLanguages/projectLanguages";
+import { Grid } from "@material-ui/core";
 
 export default function ProjectCard({ repo, theme }) {
   function openRepoinNewTab(url) {
@@ -46,9 +47,16 @@ export default function ProjectCard({ repo, theme }) {
           <p className="repo-description" style={{ color: theme.contrast_color }}>
             {repo.description}
           </p>
-          <br/>
+          <br />
+
           <div className="repo-details">
-            <ProjectLanguages logos={repo.languages} />
+            <Grid container spacing={2}>
+              <Grid item xs={6}>
+                <ProjectLanguages techStack={repo.techStack} />
+              </Grid>
+              <Grid item xs={6}>
+              </Grid>
+            </Grid>
           </div>
         </div>
       </Fade>
