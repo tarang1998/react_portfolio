@@ -1,0 +1,40 @@
+.programmingAccordian {
+    margin: 50px;
+    margin-top: 120px !important;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .programmingAccordian:hover {
+    box-shadow: 0 5px 15px var(--main-color);
+  }
+  
+  .accordianPanel {
+    font-family: var(--font-google-sans-regular);
+  }
+  
+  .an {
+    font-size: var(--textSize) !important;
+  }
+  
+  @media (max-width: 1380px) {
+    .an {
+      font-size: var(--textSizeMaxWidth1380) !important;
+    }
+  }
+  @media (max-width: 1110px) {
+    .an {
+      font-size: var(--textSizeMaxWidth1100) !important;
+    }
+  }
+  
+  @media (max-width: 760px) {
+    .programmingAccordian {
+      margin: 20px;
+      margin-top: 70px !important;
+    }
+  
+    .an {
+      font-size: var(--textSizeMaxWidth760) !important;
+    }
+  }
+  

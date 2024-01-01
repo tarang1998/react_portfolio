@@ -4,12 +4,10 @@ import { useContext } from 'react'
 import { ThemeContext } from 'styled-components'
 import { programming } from "../../utils/programmingData";
 import Fade from 'react-reveal/Fade';
-import EducationImg from "../../utils/educationSVGs/educationImg";
 import "./programming.css"
 import ProgrammingPlatForms from "./programmingPlatforms/programmingPlatforms"
 import SoftwareDevelopmentImg from "../../utils/skillSVGs/SoftwareDevelopmentImg";
-import { experience } from "../../utils/experienceData";
-import ExperienceAccordion from "../../components/experienceAccordian/experienceAccordian";
+import ProgrammingPatternAccordian from "./programmingProblems/programmingPattern";
 
 const Programming = () => {
 
@@ -54,7 +52,7 @@ const Programming = () => {
 
       <Fade duration={2000} right>
 
-        <ExperienceAccordion sections={experience['sections']} />
+        <ProgrammingPatternAccordian programmingPatterns={programming['programmingPatterns']} />
 
       </Fade>
 

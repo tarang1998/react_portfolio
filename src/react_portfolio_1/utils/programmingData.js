@@ -4,6 +4,18 @@ export const programming = {
 
     description : `🤓 A competitive programming enthusiast`,
 
+    programmingPatterns : [
+      {
+        pattern : "LINKED_LIST",
+        name : "Linked List"
+
+      },{
+        pattern : "DYNAMIC_PROGRAMMING",
+        name : "Dynamic Programming"
+      }
+
+    ],
+
 
     competitiveProgrammingPlatforms: [
         {
