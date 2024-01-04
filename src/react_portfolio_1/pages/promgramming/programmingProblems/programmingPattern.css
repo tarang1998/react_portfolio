@@ -16,6 +16,22 @@
     font-size: var(--textSize) !important;
   }
   
+  .bp{
+    padding-right: 7px !important;
+  }
+
+  .bo{
+    padding-left: 7px !important;
+  }
+
+  .bm {
+    padding-top: 7px !important;
+  }
+
+  .bn{
+    padding-bottom: 5px !important;
+  }
+  
   @media (max-width: 1380px) {
     .an {
       font-size: var(--textSizeMaxWidth1380) !important;

@@ -49,7 +49,7 @@ function ReactPortfolio(props) {
                   }}>
                   <Switch>
                     <Route path="/programming">
-                      <Programming/>
+                      <Programming theme = {theme}/>
                     </Route>
                     <Route path = "/projects">
                       <Projects theme = {theme}/>  

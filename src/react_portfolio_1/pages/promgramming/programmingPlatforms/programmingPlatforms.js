@@ -8,7 +8,6 @@ function ProgrammingPlatForms(props) {
       <div className="programming-platforms-div">
         <ul className="dev-icons">
           {props.programmingPlatforms.map((programmingPlatform) => {
-            console.log(programmingPlatform)
             return (
               <OverlayTrigger
                 key={programmingPlatform.platform}
@@ -24,10 +23,11 @@ function ProgrammingPlatForms(props) {
                   target="_blank"
                   rel="noopener noreferrer">
                     <span
-                      className="iconify"
+                      className="iconify programmingPlatformIcons"
                       data-icon={programmingPlatform.iconifyIconId}
                       style={programmingPlatform.style}
                       data-inline="false"
+                      
                     ></span>
                   </a>
                 </li>

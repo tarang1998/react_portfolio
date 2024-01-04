@@ -1,0 +1,154 @@
+.problemCard {
+  width: 100%;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+
+
+.problemCardBodyDiv {
+  width: 100%;
+}
+
+.problemCardHeaderDiv {
+  display: flex;
+  flex-direction: row;
+}
+
+.problemCardHeaderRightDiv {
+  display: inline-flex;
+  margin-right: 10px;
+  float: right;
+  margin-left: auto;
+}
+
+
+.problemCardHeaderLeftDiv {
+  float: left;
+  margin-left: 10px;
+  margin-right: auto;
+}
+
+
+.problemCardHeaderTitle {
+  font-family: var(--font-google-sans-regular);
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 0px;
+  margin-right: 7px;
+  text-align: left;
+  font-size: var(--textSize);
+}
+
+.problemCardDifficultText {
+  font-family: var(--font-google-sans-regular);
+  font-size: var(--textSize);
+  font-weight: 700;
+
+}
+
+.problemCardHeaderTitle>a {
+  position: relative;
+  color: #8c8c8c;
+  text-decoration: none;
+}
+
+.problemCardHeaderTitle>a:hover {
+  color: #8c8c8c;
+}
+
+.problemCardHeaderTitle>a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.problemCardHeaderTitle>a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #8c8c8c;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.problemCardDifficultTag {
+  margin-right: 5px;
+  border-radius: 20px;
+}
+
+
+@media (max-width: 1380px) {
+  .problemCardHeaderTitle {
+    font-size: var(--textSizeMaxWidth1380);
+  }
+
+  .problemCardDifficultText {
+    font-size: var(--textSizeMaxWidth1380);
+
+  }
+
+}
+
+@media (max-width: 1110px) {
+  .problemCardHeaderTitle {
+    font-size: var(--textSizeMaxWidth1110);
+  }
+
+  .problemCardDifficultText {
+    font-size: var(--textSizeMaxWidth1110);
+
+  }
+
+}
+
+@media (max-width: 960px) {
+  .problemCardHeaderTitle {
+    font-size: var(--textSizeMaxWidth760);
+  }
+
+  .problemCardDifficultText {
+    font-size: var(--textSizeMaxWidth760);
+
+  }
+
+}
+
+@media (max-width: 350px) {
+  /* .problemCard {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .problemCardHeaderDiv {
+    flex-direction: column;
+  }
+
+  .problemCardHeaderRightDiv {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .problemCardHeaderLeftDiv {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .problemCardHeaderTitle {
+    text-align: center;
+  } */
+
+  /* .problemCardHeaderTitle {
+    font-size: 15px;
+  } */
+
+}

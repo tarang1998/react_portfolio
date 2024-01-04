@@ -1,5 +1,5 @@
 import { Grid } from "@material-ui/core";
-import React from "react";
+import React, { Component } from "react";
 import { useContext } from 'react'
 import { ThemeContext } from 'styled-components'
 import { programming } from "../../utils/programmingData";
@@ -8,61 +8,120 @@ import "./programming.css"
 import ProgrammingPlatForms from "./programmingPlatforms/programmingPlatforms"
 import SoftwareDevelopmentImg from "../../utils/skillSVGs/SoftwareDevelopmentImg";
 import ProgrammingPatternAccordian from "./programmingProblems/programmingPattern";
-
-const Programming = () => {
-
-  const currentTheme = useContext(ThemeContext)
-
-
-  return (
+import { compose } from "redux";
+import { connect } from "react-redux";
+import { firestoreConnect } from "react-redux-firebase";
 
 
-    <div className='programmingPage' style={{
-      'color': currentTheme.contrast_color
-    }} >
+class Programming extends Component {
 
-      <Fade duration={4000}>
+  render() {
 
-        <Grid container className="programmingHeading">
+    // const currentTheme = useContext(ThemeContext)
+    const currentTheme = this.props.theme
 
-          <Grid item xs={12} md={7} className="programmingHeadingText" >
+    return (
 
-            <div className="programmingHeadingTextTitle">
-              {programming['title']}
-            </div>
 
-            <div className="programmingHeadingTextDescription">
-              {programming['description']}
-            </div>
+      <div className='programmingPage' style={{
+        'color': currentTheme.contrast_color
+      }} >
 
-            <ProgrammingPlatForms programmingPlatforms={programming.competitiveProgrammingPlatforms} />
+        <Fade duration={4000}>
+
+          <Grid container className="programmingHeading">
+
+            <Grid item xs={12} md={7} className="programmingHeadingText" >
+
+              <div className="programmingHeadingTextTitle">
+                {programming['title']}
+              </div>
+
+              <div className="programmingHeadingTextDescription">
+                {programming['description']}
+              </div>
+
+              <ProgrammingPlatForms programmingPlatforms={programming.competitiveProgrammingPlatforms} />
+
+
+            </Grid>
+
+            <Grid item xs={12} md={5} className="programmingHeadingImage">
+              <SoftwareDevelopmentImg theme={currentTheme} />
+            </Grid>
+
 
 
           </Grid>
 
-          <Grid item xs={12} md={5} className="programmingHeadingImage">
-            <SoftwareDevelopmentImg theme={currentTheme} />
-          </Grid>
+        </Fade>
+
+        <Fade duration={2000} right>
+
+          <ProgrammingPatternAccordian 
+          programmingProblems = {this.props.programmingProblems}
+          programmingPatterns={programming['programmingPatterns']} />
+
+        </Fade>
 
 
-
-        </Grid>
-
-      </Fade>
-
-      <Fade duration={2000} right>
-
-        <ProgrammingPatternAccordian programmingPatterns={programming['programmingPatterns']} />
-
-      </Fade>
-
-
-    </div>
+      </div>
 
 
 
 
-  );
-};
+    );
+  }
+}
 
-export default Programming;
+const mapStateToProps = (state) => {
+  const problems  = 
+  state.firestore.ordered.programming ?? []
+  // [
+  //   {
+  //     'type' : 'LINKED_LIST',
+  //     'title' : 'Reverse a Linked List',
+  //     'questionUrl' : '',
+  //     'solution' : [
+  //       {
+  //         'type' : 'PYTHON',
+  //         'url' : ""
+  //       },
+  //       {
+  //         'type' : 'TEXT',
+  //         'url' : ''
+  //       }
+  //     ]
+  //   }] 
+
+
+
+  let programmingProblems = new Map();
+
+  problems.map((problem)=>{
+    const type = problem['type']
+
+    if(programmingProblems.has(type)){
+      programmingProblems.get(type).push(problem)  
+
+    }
+    else{
+      programmingProblems.set(type, [problem])
+    }
+
+  })
+
+
+  return {
+    programmingProblems : programmingProblems,
+  }
+}
+
+export default compose(
+  connect(mapStateToProps),
+  firestoreConnect([
+    { collection: 'programming' , orderBy: ['priority', 'asc']},
+  ])
+)(Programming)
+
+
