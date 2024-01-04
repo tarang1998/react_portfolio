@@ -1,5 +1,5 @@
-import {  Grid } from "@material-ui/core";
-import React from "react";
+import { Grid } from "@material-ui/core";
+import React, { Component } from "react";
 import ProjectImg from "../../utils/projectSVGs/projectImg";
 
 import { useContext } from 'react'
@@ -9,87 +9,106 @@ import Fade from 'react-reveal/Fade';
 import './project.css'
 import ProjectCard from "./projectCard/projectCard";
 import { style } from "glamor";
+import { compose } from "redux";
+import { firestoreConnect } from "react-redux-firebase";
+import { connect } from "react-redux";
+
+
+class Projects extends Component {
+
+  render() {
 
 
 
-const Projects = () => {
+    const currentTheme = this.props.theme
 
-  
+    const styles = style({
+      'color': currentTheme.contrast_color,
+      // backgroundColor: `${currentTheme.accentColor}`,
+
+      ":hover": {
+        boxShadow: `0 5px 15px ${currentTheme.accentColor}`,
+      },
+    });
 
 
-  const currentTheme = useContext(ThemeContext)
+    return (
 
-  const styles = style({
-    'color':currentTheme.contrast_color,
-    // backgroundColor: `${currentTheme.accentColor}`,
+      <div className="projects-main"
+        style={{
+          'color': currentTheme.contrast_color
+        }}>
 
-    ":hover": {
-      boxShadow: `0 5px 15px ${currentTheme.accentColor}`,
-    },
-  });
+        <div className="basic-projects">
 
- 
-  return (
+          <Fade duration={4000} >
 
-    <div className="projects-main"
-    style={{
-      'color':currentTheme.contrast_color}}>
+            <Grid container className="projects-heading-div">
 
-      <div className="basic-projects">
+              <Grid item xs={12} md={6} className="projectHeadingImage">
+                <ProjectImg theme={currentTheme} />
+              </Grid>
 
-        <Fade  duration={4000} >
+              <Grid item xs={12} md={6} className="projectHeadingText" >
+                <div className="projectHeadingTextTitle">
+                  {projectData['title']}
+                </div>
 
-          <Grid container className="projects-heading-div">
+                <div className="projectHeadingTextSubtitle">
+                  {projectData['subtitle']}
+                </div>
 
-            <Grid item xs={12} md={6} className="projectHeadingImage">
-              <ProjectImg theme={currentTheme} />
+                <div className="projectHeadingTextDescription">
+                  {projectData['description']}
+
+                </div>
+
+
+              </Grid>
+
             </Grid>
 
-            <Grid item xs={12} md={6} className="projectHeadingText" >
-              <div className="projectHeadingTextTitle">
-                {projectData['title']}
-              </div>
+          </Fade>
 
-              <div className="projectHeadingTextSubtitle">
-                {projectData['subtitle']}
-              </div>
+        </div>
 
-              <div className="projectHeadingTextDescription">
-                {projectData['description']}
-                
-              </div>
+        <div className="repo-cards-div-main">
+          {this.props.projects.map((project) => {
+            return <ProjectCard repo={project} theme={currentTheme} />;
+          })}
+        </div>
+        <br />
 
-            
-            </Grid>
+        <a
+          {...styles}
+          className="general-btn"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/tarang1998"
 
-          </Grid>
+        >
+          More Projects (Github)
+        </a>
 
-        </Fade>
 
       </div>
-      
-      <div className="repo-cards-div-main">
-        {projectData.projects.map((project) => {
-          return <ProjectCard repo={project} theme={currentTheme} />;
-        })}
-      </div>
-      <br />
-      
-      <a
-        {...styles}
-        className="general-btn"
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://github.com/tarang1998"
 
-      >
-        More Projects (Github)
-      </a>
-      
-
-    </div>
-
-  );
+    );
+  }
 };
 
-export default Projects;
+
+const mapStateToProps = (state) => {
+  const projects = state.firestore.ordered.projects ?? [] 
+  return {
+    projects: projects,
+  }
+}
+
+export default compose(
+  connect(mapStateToProps),
+  firestoreConnect([
+    { collection: 'projects' , orderBy: ['priority', 'asc']},
+  ])
+)(Projects)
+

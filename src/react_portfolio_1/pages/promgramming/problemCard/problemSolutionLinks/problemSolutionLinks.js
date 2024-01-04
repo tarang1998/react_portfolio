@@ -1,31 +1,40 @@
 import React from "react";
-import "./programmingPlatforms.css";
+import "./problemSolutionLinks.css";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
+import { programming } from "../../../../utils/programmingData";
+ 
 
 
-function ProgrammingPlatFroms(props) {
+function ProblemSolutionLinks(props) {
+
   return (
-      <div className="programming-platforms-div">
+      <div className="problem-links-div">
         <ul className="dev-icons">
-          {props.programmingPlatforms.map((programmingPlatform) => {
+          {props.links.map((link) => {
+
+
+            const type = link['type']
+            const url = link['url']
+            const solType = programming.solutionType[type]
+
             return (
               <OverlayTrigger
-                key={programmingPlatform.platform}
+                key={solType.name}
                 placement={"top"}
                 overlay={
                   <Tooltip id={`tooltip-top`}>
-                    <strong>{programmingPlatform.platform}</strong>
+                    <strong>{solType.name}</strong>
                   </Tooltip>
                 }
               >
-                <li className="programming-platforms-inline" name={programmingPlatform.platform}>
-                  <a href={programmingPlatform.link}
+                <li className="problem-links-inline" name={solType.name}>
+                  <a href={url}
                   target="_blank"
                   rel="noopener noreferrer">
                     <span
                       className="iconify"
-                      data-icon={programmingPlatform.iconifyIconId}
-                      style={programmingPlatform.style}
+                      data-icon={solType.iconifyIconId}
+                      style={solType.style}
                       data-inline="false"
                     ></span>
                   </a>
@@ -38,4 +47,4 @@ function ProgrammingPlatFroms(props) {
   );
 }
 
-export default ProgrammingPlatFroms;
+export default ProblemSolutionLinks;

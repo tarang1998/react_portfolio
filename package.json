@@ -29,7 +29,13 @@
     "styled-components": "^5.3.3",
     "styletron-engine-atomic": "^1.4.8",
     "styletron-react": "^6.0.2",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "firebase": "^10.7.1",
+    "react-redux": "^5.0.7",
+    "react-redux-firebase": "^2.1.6",
+    "redux": "^5.0.1",
+    "redux-firestore": "^0.5.7",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",

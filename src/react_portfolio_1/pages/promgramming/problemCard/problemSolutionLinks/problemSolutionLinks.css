@@ -1,14 +1,12 @@
 .dev-icons {
     padding-left: 0;
-    font-size: 3rem;
+    font-size: 20px;
     margin-bottom: 0px;
     margin-top: 0px;
     text-align: center;
-  }
-  
-  .programming-platforms-inline {
+}
+
+.problem-links-inline {
     display: inline-block;
-    margin-right: 20px;
-    margin-bottom: 20px;
-  }
-  
+    margin-right: 5px;
+}
